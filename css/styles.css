@@ -24,47 +24,42 @@ h6 {
 body {
     font-family: 'Junge', sans-serif, serif;
 }
-
-#face_img {
-    position: relative; 
-    visibility: visible; 
-    left: 530px; 
-    top: 30px; 
-    height: 100px; 
-    width: auto; 
-    z-index: 2;
-    
-}
-#title {
-    margin-left: 15px;
-    border-radius: 15px;
-    padding: 7px;
-}
-
-
-#header {
-    color: white;
-    background: blue;
-    text-align: center;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-#footer {
-    color: white;
-    background: blue;
-    text-align: center;
-    display: flex;
-    padding: 30px;
-    border-radius: 10px;
-}
-
 #content {
-    top:34px;
     background-color: whitesmoke;
     border-radius: 20px;
     max-width: 700px;
     margin: 0 auto; 
+}
+
+#face_img {
+    position: relative;  
+    left: 530px; 
+    top: -180px; 
+    height: 100px; 
+    width: 100; 
+    z-index: 2;   
+}
+
+ #title {
+    margin-left: 15px;
+    padding: 7px;
+}
+
+#header { 
+    color: white;
+    background: blue;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#footer {
+    text-align: center;
+    color: white;
+    background: blue;
+    padding: 1em;
+    border-radius: 10px;
 }
 
 hr {
@@ -73,14 +68,3 @@ hr {
     margin-right: auto;
     border-top: 1px solid #ccc;
 }
-
-#leftcolumn{
-    min-height:65vh;
-    background-color:#161b33; 
-    width: 150px;
-    float: left;
-  }
-  #rightcolumn {
-    margin-left: 170px;
-    padding:60px;
-  }
