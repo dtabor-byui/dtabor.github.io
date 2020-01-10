@@ -26,7 +26,7 @@ body {
 }
 
 #content {
-    background-color: whitesmoke;
+    background-color: rgb(206, 200, 200);
     border-radius: 20px;
     max-width: 700px;
     margin: 0 auto;
@@ -34,11 +34,12 @@ body {
 
 #face_img {
     position: relative;
-    left: 530px;
-    top: -180px;
-    height: 100px;
-    width: 100px;
+    left: 510px;
+    top: -170px;
+    height: 120px;
+    width: 120px;
     z-index: 2;
+    box-shadow: 10px 30px 20px 2px rgba(0,0,0,0.19), 10px 30px 20px 2px rgba(0,0,0,0.23);
 }
 
 #title {
@@ -63,6 +64,10 @@ body {
     background: blue;
     padding: .5em;
     border-radius: 10px;
+}
+
+#script{
+    color: rgb(216, 231, 4);
 }
 
 hr {
