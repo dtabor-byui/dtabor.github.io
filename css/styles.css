@@ -25,7 +25,15 @@ body {
     font-family: 'Junge', sans-serif, serif;
 }
 
+#face_img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    padding: 20px;
+
+}
 #title {
+    vertical-align: bottom;
     margin-left: 15px;
     border-radius: 10px;
     padding: 7px;
@@ -50,11 +58,12 @@ body {
 }
 
 #content {
-    width: 75%;
-    margin: 0 auto;
-    background: white;
-    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    position:center;
+    top:34px;
+    background-color: whitesmoke;
     border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto; 
 }
 
 hr {
@@ -63,3 +72,14 @@ hr {
     margin-right: auto;
     border-top: 1px solid #ccc;
 }
+
+#leftcolumn{
+    min-height:65vh;
+    background-color:#161b33; 
+    width: 150px;
+    float: left;
+  }
+  #rightcolumn {
+    margin-left: 170px;
+    padding:60px;
+  }
