@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Donegal+One|Junge&display=swap');
+
+a:link {
+    color: rgb(3, 40, 88);
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Donegal One', sans-serif, serif;
+    margin-bottom: -15px;
+}
+
+body {
+    font-family: 'Junge', sans-serif, serif;
+}
+
+#title {
+    margin-left: 15px;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+
+#header {
+    color: white;
+    background: blue;
+    text-align: center;
+    padding: 25Spx;
+    border-radius: 10px;
+}
+
+#footer {
+    color: white;
+    background: blue;
+    text-align: center;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#content {
+    width: 75%;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 20px;
+}
+
+hr {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #ccc;
+}
