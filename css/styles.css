@@ -46,7 +46,7 @@ body {
     color: white;
     background: blue;
     text-align: center;
-    padding: 25Spx;
+    padding: 15px;
     border-radius: 10px;
 }
 
@@ -60,7 +60,6 @@ body {
 }
 
 #content {
-    position:center;
     top:34px;
     background-color: whitesmoke;
     border-radius: 20px;
