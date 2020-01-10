@@ -26,16 +26,18 @@ body {
 }
 
 #face_img {
-    max-width: 100%;
-    height: auto;
-    float: right;
-    padding: 20px;
-
+    position: relative; 
+    visibility: visible; 
+    left: 530px; 
+    top: 30px; 
+    height: 100px; 
+    width: auto; 
+    z-index: 2;
+    
 }
 #title {
-    vertical-align: bottom;
     margin-left: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 7px;
 }
 
