@@ -34,14 +34,15 @@ body {
 }
 
 #face_img {
-    margin-top: -25px;
+    max-height: 170px;
+    float: right;
+    margin-top: -230px;
     margin-left: 15px;
     margin-right: 25px;
-    display: absolute;
-    float: right;
-    box-shadow: 8px 8px 3px 1px;
-    z-index: 2;
-
+    border-width: 10px;
+    padding: 0px;
+    border: 0px transparent # CCC;
+    box-shadow: 1px 3px 10px 1px ;
 }
 
 #main {
@@ -54,7 +55,6 @@ body {
 }
 
 #header {
-
     height: 70px;
     line-height: 70px;
     text-align: center;
@@ -66,7 +66,6 @@ body {
 
 
 #footer {
-
     width: 700px;
     line-height: 30px;
     text-align: center;
@@ -74,8 +73,6 @@ body {
     color: white;
     background: rgb(6, 6, 187);
     border-radius: 10px;
-
-
 }
 
 #script {
@@ -86,5 +83,4 @@ hr {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    border-top: 1px solid #ccc;
 }
