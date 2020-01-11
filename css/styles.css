@@ -34,13 +34,12 @@ body {
 }
 
 #face_img {
-    height: 10px;
     margin-top: -25px;
     margin-left: 15px;
     margin-right: 25px;
     display: absolute;
     float: right;
-    box-shadow: 8px 8px 6px 3px rgba(0, 0, 0, 0.19), 8px 8px 6px 3px rgba(0, 0, 0, 0.23);
+    box-shadow: 8px 8px 3px 1px;
     z-index: 2;
 
 }
