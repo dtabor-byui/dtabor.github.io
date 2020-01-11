@@ -41,9 +41,7 @@ body {
     margin-left: 15px;
     margin-right: 25px;
     border-width: 10px;
-    padding: 0px;
-    border: 0px transparent #CCC;
-    box-shadow: 1px 3px 10px 1px ;
+    box-shadow: 5px 10px 15px -1px ;
 }
 
 #main {
