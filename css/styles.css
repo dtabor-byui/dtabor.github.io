@@ -34,27 +34,28 @@ body {
 }
 
 #face_img {
-    max-height: 140px;
-    margin-top: -1.8em;
-    margin-left: -10em;
-    margin-right: 2em;
-    display:absolute;
-    float:right;
-    box-shadow: 8px 8px 6px 3px rgba(0,0,0,0.19), 8px 8px 6px 3px rgba(0,0,0,0.23);
+    height: 10px;
+    margin-top: -25px;
+    margin-left: 15px;
+    margin-right: 25px;
+    display: absolute;
+    float: right;
+    box-shadow: 8px 8px 6px 3px rgba(0, 0, 0, 0.19), 8px 8px 6px 3px rgba(0, 0, 0, 0.23);
     z-index: 2;
-    
+
 }
 
 #main {
     min-height: 190px;
 }
+
 #title {
     margin-left: 15px;
     padding: 7px;
 }
 
 #header {
-    
+
     height: 70px;
     line-height: 70px;
     text-align: center;
@@ -66,7 +67,7 @@ body {
 
 
 #footer {
-    
+
     width: 700px;
     line-height: 30px;
     text-align: center;
@@ -74,11 +75,11 @@ body {
     color: white;
     background: rgb(6, 6, 187);
     border-radius: 10px;
-   
-   
+
+
 }
 
-#script{
+#script {
     color: rgb(250, 226, 7);
 }
 
