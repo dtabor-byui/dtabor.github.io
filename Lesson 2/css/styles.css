@@ -3,83 +3,32 @@
 
 @import url('https://fonts.googleapis.com/css?family=Donegal+One|Junge&display=swap');
 
-
-a:link {
-    color: rgba(9, 35, 70, 0.795);
-}
-
-a:visited {
-    color: whitesmoke;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Donegal One', sans-serif, serif;
-    margin-bottom: -15px;
-}
-
-body {
+html {
     font-family: 'Junge', sans-serif, serif;
 }
 
-#content {
-    background-color: rgb(206, 200, 200);
-    border-radius: 20px;
-    max-width: 700px;
+* {
+    box-sizing: border-box;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+.header {
+    grid-column-gap: 20px;
+    background-color: rgb(228, 217, 217);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+.main-grid {
+    display: grid;
+    background-color: rgb(141, 137, 137);
+    
+    max-width: 900px;
     max-height: 1000px;
     margin: 0 auto;
-}
-
-#face_img {
-    max-height: 170px;
-    float: right;
-    margin-top: -230px;
-    margin-left: 15px;
-    margin-right: 25px;
-    border-width: 10px;
-    box-shadow: 5px 10px 15px -1px ;
-}
-
-#main {
-    min-height: 190px;
-}
-
-#title {
-    margin-left: 15px;
-    padding: 7px;
-}
-
-#header {
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-    color: white;
-    background: rgb(6, 6, 187);
-    border-radius: 10px;
-    text-align: center;
-}
-
-
-#footer {
-    width: 700px;
-    line-height: 30px;
-    text-align: center;
-    overflow: hidden;
-    color: white;
-    background: rgb(6, 6, 187);
-    border-radius: 10px;
-}
-
-#script {
-    color: rgb(250, 226, 7);
-}
-
-hr {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
 }
