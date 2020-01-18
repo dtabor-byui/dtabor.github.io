@@ -1,12 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
+* {
+  box-sizing: border-box;
+}
 html {
   font-family: 'Gelasio', serif;
 }
 
 body {
   max-width: 1000px;
+  min-width: 300px;
   margin: 0 auto;
 }
 
@@ -18,27 +22,32 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
   padding: 10px;
 }
 
 .leftRow {
+  float:left;
   background-color: rgb(170, 184, 170);
+  border-radius: 15px;
   text-align: center;
   padding: 10px;
 }
 
 .midRow {
+  float:left;
   background-color: rgb(197, 197, 175);
   text-align: center;
   padding: 10px;
+  border-radius: 15px;
 }
 
 .rightRow {
+  float:left;
   background-color: rgb(147, 147, 172);
   text-align: center;
   padding: 10px;
+  border-radius: 15px;
 }
 
 footer {
