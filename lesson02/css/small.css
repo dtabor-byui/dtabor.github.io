@@ -1,8 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
-* {
-  box-sizing: border-box;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gelasio', serif;
+    margin-bottom: -15px;
 }
 html {
   font-family: 'Gelasio', serif;
