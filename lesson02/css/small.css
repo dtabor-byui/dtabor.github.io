@@ -8,9 +8,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Gelasio', serif;
-    margin-bottom: -15px;
+  font-family: 'Gelasio', serif;
+  margin-bottom: -15px;
 }
+
 html {
   font-family: 'Gelasio', serif;
   background-color: rgb(48, 41, 41);
@@ -20,7 +21,7 @@ body {
   max-width: 1000px;
   min-width: 300px;
   margin: 0 auto;
-  padding:20px;
+  padding: 20px;
 }
 
 header {
@@ -37,7 +38,6 @@ main {
 }
 
 .leftRow {
-  float:left;
   background-color: rgb(170, 184, 170);
   border-radius: 15px;
   text-align: center;
@@ -45,7 +45,6 @@ main {
 }
 
 .midRow {
-  float:left;
   background-color: rgb(197, 197, 175);
   text-align: center;
   padding: 10px;
@@ -53,7 +52,6 @@ main {
 }
 
 .rightRow {
-  float:left;
   background-color: rgb(147, 147, 172);
   text-align: center;
   padding: 10px;
