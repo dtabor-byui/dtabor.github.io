@@ -14,12 +14,13 @@ h6 {
 
 html {
   font-family: 'Gelasio', serif;
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(153, 139, 139);
 }
 
 body {
   max-width: 1000px;
   min-width: 300px;
+  min-height:800px;
   margin: 0 auto;
   margin-top:10px;
   padding: 20px;
@@ -31,7 +32,7 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  background-color: rgb(110, 143, 132);
+  background-color: #6E8F84;
   border-radius: 8px;
   box-shadow: 0 2px 15px;
 }
@@ -55,22 +56,23 @@ header {
   width: 96px;
   height: 96px;
   padding: 4px;
-  border: 2px solid rgb(25, 25, 63);
-  background-color: rgb(110, 143, 132);
+  border: 2px solid #19193F
+  ;
+  background-color: #6E8F84;
 }
 #color-body{
   width: 96px;
   height: 96px;
   padding: 4px;
-  border: 2px solid rgb(25, 25, 63);
-  background-color: rgb(196, 196, 196);
+  border: 2px solid #19193F;
+  background-color: #C4C4C4;
 }
 #color-menu{
   color: rgb(27, 8, 8);
   width: 96px;
   height: 96px;
   padding: 4px;
-  border: 2px solid rgb(25, 25, 63);
+  border: 2px solid #19193F;
   background-color: #9da4a8;
 }
 nav {
@@ -89,7 +91,7 @@ nav ul {
 
 nav li a {
   display: block;
-	color: rgb(27, 8, 8);
+	color: #1B0808;
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
@@ -97,12 +99,13 @@ nav li a {
 }
 
 nav a:hover {
-	background-color: #bbb;
+	background-color: rgb(224, 167, 122);
   color: #36454f;
   border-radius: 8px;
 }
 
 main {
+  min-height:630px;
   padding: 15px;
 }
 
@@ -110,7 +113,7 @@ footer {
   line-height: 25px;
   text-align: center;
   min-height: 60px;
-  background-color: rgb(110, 143, 132);
+  background-color: #6E8F84;
   box-shadow: 0 2px 15px;
   border-radius: 8px;
 }
