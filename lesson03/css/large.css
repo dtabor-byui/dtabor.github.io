@@ -1,0 +1,10 @@
+@media only screen and (min-width: 1000px) { 
+    
+      #image{
+        float: right;
+        margin-top: -20px;
+      }
+      #color{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
