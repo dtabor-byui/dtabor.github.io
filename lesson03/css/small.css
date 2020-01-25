@@ -1,6 +1,17 @@
 @charset "utf-8";
-/* CSS Document */
 
+/* CSS Document */
+a:link {
+  color: rgba(0, 0, 0);
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:active {
+  color: yellow;
+}
 
 h1,
 h2,
@@ -20,13 +31,13 @@ html {
 body {
   max-width: 1000px;
   min-width: 300px;
-  min-height:800px;
+  min-height: 800px;
   margin: 0 auto;
-  margin-top:10px;
+  margin-top: 10px;
   padding: 20px;
   background-color: #EEEEEE;
   border-radius: 2px;
-  
+
 }
 
 header {
@@ -36,94 +47,105 @@ header {
   box-shadow: 0 3px 3px;
   border-radius: 3px;
 }
+
 nav {
   background-color: #9da4a8;
   text-align: center;
-  box-shadow: 0 3px 3px; 
+  box-shadow: 0 3px 3px;
   border-radius: 2px;
 }
+
 nav ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 
 }
 
 nav li a {
-display: block;
-color: #1B0808;
-text-align: center;
-padding: 0.75rem;
-text-decoration: none;
-font-size: 0.95rem;
+  display: block;
+  color: #1B0808;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
 }
 
 nav a:hover {
-background-color: #E0A77A;
-color: #36454f;
-border-radius: 8px;
+  background-color: #E0A77A;
+  color: #36454f;
+  border-radius: 8px;
 }
 
 main {
-min-height:630px;
-padding: 15px;
+  min-height: 630px;
+  padding: 15px;
 }
 
 footer {
-line-height: 25px;
-text-align: center;
-min-height: 60px;
-background-color: #6E8F84;
-box-shadow: 0 3px 3px;
-border-radius: 3px;
+  line-height: 25px;
+  text-align: center;
+  min-height: 60px;
+  background-color: #6E8F84;
+  box-shadow: 0 3px 3px;
+  border-radius: 3px;
 }
+
 /* CSS for the Image postion */
-#image{
+#image {
   float: center;
   margin-top: 20px;
 }
+
 /*CSS for the divs on the  target-audience page*/
-#persona, senario{
-  padding:30px;
+#persona,
+senario {
+  padding: 30px;
 }
-#senario{
-  padding:30px;
+
+#senario {
+  padding: 30px;
 }
+
 /* CSS for the color-scheme page-divs*/
 #color {
-  display:grid;
+  display: grid;
+  max-width: 400px;
   grid-template-columns: 1fr;
   column-gap: 10px;
   row-gap: 10px;
 }
-#color-head-foot{
+
+#color-head-foot {
   width: 96px;
-  height: 96px;
+  height: 200px;
   padding: 4px;
-  border: 2px solid #19193F
-  ;
+  border: 2px solid #19193F;
   background-color: #6E8F84;
 }
-#color-body{
+
+#color-body {
   width: 96px;
-  height: 96px;
+  height: 200px;
   padding: 4px;
   border: 2px solid #19193F;
   background-color: #EEEEEE;
 }
-#color-menu{
-  color: rgb(27, 8, 8);
+
+#color-menu {
+  color: 1B0808;
   width: 96px;
-  height: 96px;
+  height: 200px;
   padding: 4px;
   border: 2px solid #19193F;
   background-color: #9da4a8;
 }
-#color-hover{
+
+#color-hover {
   color: rgb(27, 8, 8);
   width: 96px;
-  height: 96px;
+  height: 200px;
   padding: 4px;
   border: 2px solid #19193F;
   background-color: #E0A77A;
