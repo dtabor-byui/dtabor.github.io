@@ -25,7 +25,7 @@ body {
   margin-top:10px;
   padding: 20px;
   background-color: #EEEEEE;
-  border-radius: 8px;
+  border-radius: 2px;
   
 }
 
@@ -33,14 +33,14 @@ header {
   text-align: center;
   padding: 20px;
   background-color: #6E8F84;
-  border-radius: 8px;
-  box-shadow: 0 2px 15px;
+  box-shadow: 0 3px 3px;
+  border-radius: 3px;
 }
 nav {
   background-color: #9da4a8;
   text-align: center;
-  box-shadow: 0 2px 10px; 
-  border-radius: 8px;
+  box-shadow: 0 3px 3px; 
+  border-radius: 2px;
 }
 nav ul {
 list-style-type: none;
@@ -75,8 +75,8 @@ line-height: 25px;
 text-align: center;
 min-height: 60px;
 background-color: #6E8F84;
-box-shadow: 0 2px 15px;
-border-radius: 8px;
+box-shadow: 0 3px 3px;
+border-radius: 3px;
 }
 /* CSS for the Image postion */
 #image{
