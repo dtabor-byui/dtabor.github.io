@@ -94,7 +94,6 @@ footer {
 
 /* CSS for the Image postion */
 #image {
-  float: center;
   margin-top: 20px;
 }
 
@@ -134,7 +133,7 @@ senario {
 }
 
 #color-menu {
-  color: 1B0808;
+  color: #1B0808;
   width: 96px;
   height: 200px;
   padding: 4px;
