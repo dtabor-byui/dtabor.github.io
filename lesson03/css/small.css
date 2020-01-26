@@ -10,7 +10,7 @@ a:visited {
 }
 
 a:active {
-  color: yellow;
+  color: white;
 }
 
 h1,
@@ -20,7 +20,7 @@ h4,
 h5,
 h6 {
   font-family: 'Gelasio', serif;
-  margin-bottom: -15px;
+  margin: auto;
 }
 
 html {
