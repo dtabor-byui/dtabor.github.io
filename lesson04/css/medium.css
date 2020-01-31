@@ -1,0 +1,25 @@
+@media only screen and (min-width: 700px) {
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul.hide {
+    display: block;
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1 1;
+  }
+  header #image {
+    margin-left: 5rem;
+    padding:10px;
+  }
+
+
+}

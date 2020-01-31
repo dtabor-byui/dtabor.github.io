@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1000px) {
+
+  header #image {
+    margin-left: 10rem;
+    padding:10px;
+  }
+
+  #color {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
