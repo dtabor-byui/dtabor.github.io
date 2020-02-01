@@ -16,10 +16,8 @@
   nav ul li {
     flex: 1 1;
   }
-  header #image {
-    margin-left: 5rem;
+  #img{
     padding:10px;
+    margin-left: -15em;
   }
-
-
 }

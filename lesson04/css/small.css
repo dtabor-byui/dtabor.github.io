@@ -20,7 +20,6 @@ h4,
 h5,
 h6 {
   font-family: 'Gelasio', serif;
-  margin: auto;
 }
 
 html {
@@ -30,26 +29,23 @@ html {
 }
 
 body {
-  max-width: 1000px;
-  min-width: 300px;
+  width:100%;
+  min-width:300px;
   height: 100%;
-  margin: 0 auto;
-  padding: 20px;
   background-color: #EEEEEE;
-  border-radius: 2px;
-
 }
 
-header {
-  display:grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 15px;
+header { 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width:100%;
+  padding: 20px;
   background-color: #6E8F84;
-  box-shadow: 0 3px 3px;
-  border-radius: 3px;
 }
-header #image {
+#img{
   padding:10px;
+  margin-left: -7em;
 }
  nav button {
    border: none;
@@ -100,7 +96,7 @@ nav ul.hide{
 main {
   margin: 0 auto;
   padding: 20px;
-  max-width: 700px;
+  max-width: 900px;
 }
 main #content{
   display: block;
@@ -113,18 +109,13 @@ main h2 {
 }
 
 footer {
-  line-height: 25px;
+  display:block;
+  margin: 10px auto;
+  max-width: 950px;
   text-align: center;
-  min-height: 60px;
+  padding: 20px;
   background-color: #6E8F84;
-  box-shadow: 0 3px 3px;
-  border-radius: 3px;
 }
 
-/*----- Clearfix: Force an Element not to collapse -----
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
+
 
