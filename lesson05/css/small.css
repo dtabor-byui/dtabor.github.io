@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+/*
+------------------------------------------
+Link formating 
+------------------------------------------
+*/
+a:link {
+  color: rgba(0, 0, 0);
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:active {
+  color: white;
+}
+
+/*
+------------------------------------------
+Header Formating
+------------------------------------------
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Gelasio', serif;
+}
+
+/*
+------------------------------------------
+Page Formating 
+------------------------------------------
+*/
+html {
+  font-family: 'Gelasio', serif;
+}
+
+body {
+  min-width: 300px;
+  background-color: #EEEEEE;
+  
+}
+/*
+-------------------------------------
+Header 
+-------------------------------------
+*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6E8F84;
+}
+
+header .img{
+  padding: 10px;
+}
+header div{
+  text-align: center;
+}
+header p {
+  margin: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main #content1,
+#content2,
+#content3,
+#content4,
+#content5 {
+  display: block;
+  margin: 15px auto;
+  padding: 5px;
+  border: 1px dashed;
+}
+
+main h2 {
+  text-align: center;
+}
+
+footer {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #6E8F84;
+}
+
+
+/*
+------------------------------------------
+Navigation Menu 
+------------------------------------------
+*/
+
+nav button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+}
+
+nav {
+  background-color: #9da4a8;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  box-shadow: 0 3px 3px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 900px;
+
+}
+
+nav ul .hide {
+  display: none;
+}
+
+nav li a {
+  display: block;
+  color: #1B0808;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav ul li.active {
+  background-color: #E0A77A;
+  color: #36454f;
+  
+}
+
+nav ul li a:hover {
+  background-color: #E0A77A;
+  color: #36454f;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/*
+------------------------------------------
+Hero Image divs 
+------------------------------------------
+*/
+.heroimg {
+  width: 100%;
+  height: auto;
+}
+
+.herodiv {
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.weathersum {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: cadetblue;
+  border: 1px solid black;
+  padding: 10px;
+  width: 150px;
+  height: 185px;
+  box-shadow: 0 0 30px rgb(70, 68, 68);
+  opacity: .9;
+}
