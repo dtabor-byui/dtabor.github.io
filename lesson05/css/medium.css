@@ -82,24 +82,9 @@
     padding: 35px;
   }
  .map {
-  clear: both;
-  display: block;
+   display: block;
     width: 80%;
-    height: 400px;
-    padding: 20px;
+    height: auto;
+    border: 1px solid black;
   }
-
-  .mapouter {
-    position: relative;
-    text-align: right;
-    height: 400px;
-    width: 400px;
-}
-
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 400px;
-    width: 400px;
-}
 }
