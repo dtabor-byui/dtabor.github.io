@@ -126,9 +126,6 @@ nav ul {
 
 }
 
-nav ul .hide {
-  display: none;
-}
 
 nav li a {
   display: block;
@@ -160,9 +157,9 @@ Hero Image divs
 ------------------------------------------
 */
 .heroimg {
+  padding: 10px;
   width: 100%;
   height: auto;
-  border: 2px solid black;
 }
 
 .herodiv {
@@ -172,14 +169,13 @@ Hero Image divs
 
 .weathersum {
   position: absolute;
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
   background-color: cadetblue;
-  border: 1px solid black;
+  border: 1px solid grey;
   padding: 10px;
   width: 150px;
   height: 185px;
-  box-shadow: 0 0 30px rgb(70, 68, 68);
   opacity: .9;
 }
 .fiveday {
@@ -192,21 +188,30 @@ article {
   padding: 25px;
 }
 article img {
-  justify-content: center;
   width: 100%;
+  height:auto;
   padding: 10px;
 
 }
-article div img {
-  width: 40%;
+article div {
+  width: 100%;
   padding: 50px;
 }
-.contact .info {
-  justify-content: center;
+.info {
   width: 100%;
   padding: 25px;
 }
-.contact .map {
-  width: 40%;
-  padding: 50px;
+
+.map {
+  display:none;
 }
+
+.banner{
+  margin:0 auto;
+  height: 30px;
+  background-color: #E0A77A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
