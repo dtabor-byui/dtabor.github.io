@@ -162,11 +162,12 @@ Hero Image divs
 .heroimg {
   width: 100%;
   height: auto;
+  border: 2px solid black;
 }
 
 .herodiv {
   margin: 0 auto;
-  border: 2px solid black;
+  
 }
 
 .weathersum {
@@ -180,4 +181,32 @@ Hero Image divs
   height: 185px;
   box-shadow: 0 0 30px rgb(70, 68, 68);
   opacity: .9;
+}
+.fiveday {
+  display:none;
+}
+
+article {
+  
+  align-content: center;
+  padding: 25px;
+}
+article img {
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+
+}
+article div img {
+  width: 40%;
+  padding: 50px;
+}
+.contact .info {
+  justify-content: center;
+  width: 100%;
+  padding: 25px;
+}
+.contact .map {
+  width: 40%;
+  padding: 50px;
 }
