@@ -206,7 +206,7 @@ article div {
   display:none;
 }
 
-.banner{
+aside {
   margin:0 auto;
   height: 30px;
   background-color: #E0A77A;
@@ -214,4 +214,3 @@ article div {
   justify-content: center;
   align-items: center;
 }
-
