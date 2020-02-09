@@ -13,6 +13,8 @@
   }
 
   .fiveday div {
+    margin:0 auto;
+    text-align: center;
     width: 80px;
     height: 100px;
     padding: 5px;
