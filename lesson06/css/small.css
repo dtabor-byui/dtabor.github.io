@@ -46,6 +46,7 @@ html {
 body {
   min-width: 300px;
   background-color: #EEEEEE;
+  font-family: "Gelasio";
   
 }
 /*
@@ -122,7 +123,8 @@ nav ul {
   list-style-type: none;
   margin: 0 auto;
   max-width: 900px;
-
+  padding:0;
+  text-align:center;
 }
 
 nav li a {
@@ -153,16 +155,15 @@ nav ul.hide {
 Hero Image divs 
 ------------------------------------------
 */
-.heroimg {
-  padding: 10px;
+.herodiv {
+margin: 0 auto;
+}
+
+.imgdiv {
   width: 100%;
   height: auto;
 }
 
-.herodiv {
-  margin: 0 auto;
-  
-}
 
 .weathersum {
   position: absolute;
@@ -206,8 +207,8 @@ article div {
 #thisday {
   display:none;
   min-height: 50px;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 100;
+  margin:15px auto;
   height: 30px;
   text-align: center;
   padding:5px;
