@@ -159,8 +159,8 @@ Hero Image divs
 margin: 0 auto;
 }
 
-.imgdiv {
-  width: 100%;
+.picture { 
+  width:100%;
   height: auto;
 }
 

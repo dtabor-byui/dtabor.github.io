@@ -49,12 +49,11 @@
                 <p>Windchill= <span id="windchill"></span></p>
             </div>
             
-            <img  src="images/small.jpg" 
-            srcset="images/large.jpg 1000w, 
-                    images/medium.jpg 800w, 
-                    images/small.jpg 500w" 
-                    sizes="100vw" width="1000" class="imgdiv"   alt="Mountains and Clouds with a large field and trees">
-            
+            <picture class="picture">
+                <source media="(max-width: 530px)" srcset="images/small.jpg">
+                <source media="(max-width: 800px)" srcset="images/medium.jpg">
+                    <img src="images/large.jpg" alt="Mountains and Clouds with a large field and trees">
+            </picture>
 
         </div>
 
