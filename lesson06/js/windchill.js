@@ -1,10 +1,10 @@
 var t = parseFloat(document.getElementById("temp").textContent);
 var s = parseFloat(document.getElementById("wind").textContent);
-if (t <= 50 && s >= 3) {
+if (t <= 50 && s >= 4.8) {
     var windchills = windChill(t, s);
     document.getElementById('windchill').textContent = windchills;
 } else {
-    var windchills = "N/A";
+    var windchills = " N/A ";
     document.getElementById('windchill').textContent = windchills;
 }
 
