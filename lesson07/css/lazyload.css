@@ -18,7 +18,7 @@ picture img[data-src] {
   
 picture img {
     filter: blur(0em);
-    transition: filter 1.5s;
+    transition: filter 3s;
     padding: 5px;
 }
 .image-placeholder {
