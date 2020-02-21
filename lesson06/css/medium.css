@@ -5,8 +5,8 @@
     margin: 0 auto;
     max-width: 420px;
     display: grid;
-    align-content: center;
-    text-align:center;
+    justify-items:center;
+    align-items:center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: .5em;
     padding: 10px;

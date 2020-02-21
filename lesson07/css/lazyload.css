@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(37, 78, 66);
+    color: lightgoldenrodyellow;
+    text-align: center;
+    font-family: "Acme";
+}
+
+main {
+    display: grid;
+    grid-column: 1;
+    
+}
+
+picture img[data-src] {
+    filter: blur(0.1em);
+    border:3px dashed green;
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 1.5s;
+    padding: 5px;
+}
+.image-placeholder {
+    grid-column: 1;
+    background-color: #eee;
+    height: 300px;
+    margin: 5px;
+    width: 400px;
+}
+
+.image-placeholder > h4 {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+}
