@@ -101,18 +101,17 @@ main h2 {
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   overflow:auto;
+  /*this was the issue with the gap under my pics*/
   line-height: 0;
-  padding: 5px;
+  padding: 15px;
   
 }
 .maindiv picture{
   border: 1px solid rgb(94, 92, 92);
   padding:10px;
-  background-color: #6E8F84;
+  background-color: rgb(183, 201, 195);
 }
-.maindiv picture:hover {
-  box-shadow: 0 3px 3px;
-}
+
 .maindiv picture h5{
   text-align: center;
 }
