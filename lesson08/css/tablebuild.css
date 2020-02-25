@@ -1,14 +1,9 @@
-* {
-    box-sizing: border-box;
-}
-* { padding: 0; margin: 0; }
 
 html {
     padding:50px;
 }
 
 body {
-    background-color: cornsilk;
     font-family: "Ubuntu";
     margin: 0 auto;
     justify-content: center;
