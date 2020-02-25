@@ -58,5 +58,7 @@ tr:nth-child(even) td {
 .cost {
     background-color: #628ca6;
     color:white;
+    font-size: 17px;
+    font-weight: 900;
 }
 /* 
