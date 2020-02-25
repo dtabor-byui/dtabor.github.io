@@ -20,7 +20,7 @@ table {
     width:300px;
     margin: 0 auto;
     border-collapse: collapse;
-    border: 2px solid gray;
+    border: 1px solid gray;
     box-shadow: 7px 7px 15px 1px #628ca6;
     
 }
@@ -44,7 +44,7 @@ td,
 th {
     font-size: 28;
     justify-content: center;
-    border: 2px solid gray;
+    border: 1px solid gray;
     padding: 10px ;
 }
 
