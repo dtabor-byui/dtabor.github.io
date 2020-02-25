@@ -35,7 +35,6 @@ table tfoot{
 
 td, 
 th {
-    font-size: 28;
     justify-content: center;
     border: 1px solid gray;
     padding: 10px ;
@@ -58,7 +57,7 @@ tr:nth-child(even) td {
 .cost {
     background-color: #628ca6;
     color:white;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 900;
 }
 /* 
