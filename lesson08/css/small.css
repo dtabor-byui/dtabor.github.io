@@ -254,7 +254,7 @@ article div {
   
 }
 
-/* Form Css */
+/*------------------ Form Css------------------- */
 form fieldset{
   margin: 2rem 0;
   border: 2px solid rgb(117, 117, 131);
@@ -267,7 +267,6 @@ form legend{
 }
 form label.pinfo input, form label.sinfo input, form label.ainfo input {
 display:block;
-font-size: 1rem;
 border: solid 1px #999;
 border-radius: 4px;
 padding: .75rem;
