@@ -31,7 +31,7 @@ table tfoot{
 td, 
 th {
     justify-content: center;
-    border: 1px solid gray;
+    border: 1px solid #bbbbbb;
     padding: 10px ;
     text-align: center;
 }
