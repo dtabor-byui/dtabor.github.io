@@ -302,6 +302,9 @@ margin: 0 auto;
   resize: none;
 }
 #input {
+  max-width:300px;
+  padding:10px;
+  border: 2px solid gray;
   margin:0 auto;
   text-align: center;
 }
