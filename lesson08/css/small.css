@@ -301,5 +301,9 @@ margin: 0 auto;
   height:200px;
   resize: none;
 }
+#input {
+  margin:0 auto;
+  text-align: center;
+}
 
 
