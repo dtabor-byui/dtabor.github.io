@@ -1,0 +1,30 @@
+@media only screen and (min-width: 1000px) {
+
+
+  #color {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .fiveday {
+    margin-top: 20px;
+    margin: 0 auto;
+    max-width:420px;
+    display:grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+  }
+  .fiveday div {
+    width: 80px;
+    height: 100px;
+    padding: 5px;
+    border: 2px solid;
+    background-color: cadetblue;
+  }
+  .fiveday div img{
+    align-content: center;
+    width:70%;
+  }
+  .maindiv figure:hover {
+    box-shadow: 0 3px 3px;
+  }
+}

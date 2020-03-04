@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>The Cloudy Potato</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An index page with links to the other pages in this assignment">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>The Cloudy Potato</h1>
+            <p>Where Weather Lives ... </p>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <a id="thisday">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</a>
+    <main>
+        <div class="stormcenter">
+            <h1>Weather Report</h1>
+            <form method="get" action="thanks.html" id="input">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="pinfo">Full Name*<input type="text" name="fullname" required></label>
+                    <label class="pinfo">Phone*<input type="tel" name="phone" placeholder="123-555-1234"
+                            required></label>
+                    <label class="pinfo">Zip Code* <input type="number" name="zip" required></label>
+                    <label class="pinfo">Email*<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                </fieldset>
+                <fieldset>
+                    <legend> Storm Information</legend>
+                    <label class="sinfo">Date<input type="date" name="date"></label>
+                    <label class="sinfo"> Select Storm Type
+                        <input type="text" name="stormtype" list="stormtype">
+                        <datalist id="stormtype">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+                    <div>Storm Severity<br>
+                        <label class="sevimput">1--------5--------10<br>
+                            <input type="range" name="stormseverity" min="1" max="10"  value="1"></label>
+                    </div>
+                    <label class="sinfo"> Select Storm Location
+                        <select name="stormregion">
+                            <option value="">Please Select</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Danger Level</legend>
+                    <p>Is a user likely to be injured by this storm?</p>
+                    <label class="dinfo"><input type="radio" name="user in-danger level" value="yes">Yes</label>
+                    <label class="dinfo"><input type="radio" name="user in-danger level" value="no">No</label>
+                    <label class="dinfo"><input type="radio" name="user in-danger level" value="maybe">Maybe</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="ainfo"><textarea name="comment" class="ainfo" placeholder="Enter text here ... "></textarea></label>
+
+                </fieldset>
+                <input type="submit" value="Send my report" class="sbutton">
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; 2020 | David L. Tabor | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
+        Todays is : <a id="date"></a>
+    </footer>
+    <script src="js/newdate.js"></script>
+    <script src="js/togglemenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/wbfntld.js"></script>
+</body>
+
+</html>
