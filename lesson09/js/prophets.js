@@ -18,8 +18,8 @@ fetch(requestURL)
             let br2 = document.createElement('br');
 
             h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-            bd.textContent = prophets[i].birthdate + ' ';
-            bp.textContent = prophets[i].birthplace + ' ';
+            bd.textContent = "Date of Birth : " + prophets[i].birthdate + ' ';
+            bp.textContent = "Place of Birth : " + prophets[i].birthplace + ' ';
             image.setAttribute('src', prophets[i].imageurl);
             image.setAttribute('alt', prophets[i].name + ' ' +prophets[i].lastname + '-' + prophets[i].order);
 
