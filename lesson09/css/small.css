@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
 }
+
 /*
 ------------------------------------------
 Link formating 
@@ -47,8 +48,9 @@ body {
   min-width: 300px;
   background-color: #EEEEEE;
   font-family: "Gelasio";
-  
+
 }
+
 /*
 -------------------------------------
 Header 
@@ -61,21 +63,59 @@ header {
   background-color: #6E8F84;
 }
 
-header .img{
+header .img {
   padding: 10px;
 }
-header div{
+
+header div {
   text-align: center;
 }
+
 header p {
   margin: 0;
 }
 
 main {
-  margin:0 auto;
-  max-width: 1000px; 
-  
-  
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10px;
+}
+
+/*
+-----------------------------------------------------
+Home page Formating 
+-----------------------------------------------------
+*/
+
+.index {
+  border: 1px dashed green;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+.index article {
+  width: 100%;
+  height: 40em;
+  justify-content: center;
+  text-align: center;
+  border: 1px dashed red;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr;
+  padding:5px;
+}
+
+.index img {
+  width: 100%;
+  border: 1px dashed blue;
+  padding: 10px;
+}
+
+.index .text{
+  border:1px dashed black;
+  padding:5px;
 }
 
 
@@ -93,29 +133,32 @@ main #content1,
 main h2 {
   text-align: center;
 }
+
 .maindiv {
-  margin:0 auto;
-  max-width: 1200px; 
-  display:grid;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
   grid-gap: 10px;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  overflow:auto;
+  overflow: auto;
   padding: 15px;
-  
+
 }
-.maindiv figure{
-  margin:0;
-  padding:15px;
+
+.maindiv figure {
+  margin: 0;
+  padding: 15px;
   border: 1px solid rgb(94, 92, 92);
   background-color: rgb(183, 201, 195);
 }
 
-.maindiv figure img{
-  width:100%;
+.maindiv figure img {
+  width: 100%;
   border: 1px solid rgb(94, 92, 92);
 }
-.maindiv figure figcaption{
+
+.maindiv figure figcaption {
   text-align: center;
 }
 
@@ -138,7 +181,7 @@ nav button {
   border: none;
   background-color: transparent;
   font-size: 1.6rem;
-  width:100%;
+  width: 100%;
 }
 
 nav {
@@ -151,8 +194,8 @@ nav ul {
   list-style-type: none;
   margin: 0 auto;
   max-width: 900px;
-  padding:0;
-  text-align:center;
+  padding: 0;
+  text-align: center;
 }
 
 nav li a {
@@ -166,7 +209,7 @@ nav li a {
 nav ul li.active {
   background-color: #E0A77A;
   color: #36454f;
-  
+
 }
 
 nav ul li a:hover {
@@ -184,7 +227,7 @@ Hero Image divs
 ------------------------------------------
 */
 .herodiv {
-margin: 0 auto;
+  margin: 0 auto;
 
 }
 
@@ -192,8 +235,8 @@ picture {
   height: auto;
 }
 
-picture img{
-  width:100%;
+picture img {
+  width: 100%;
 }
 
 
@@ -210,103 +253,118 @@ picture img{
   height: 185px;
   opacity: .93;
 }
+
 .fiveday {
-  display:none;
+  display: none;
 }
+
 .fiveday h3 {
   grid-column: 1 / span 5;
 }
 
 article {
-  
+
   align-content: center;
   padding: 25px;
 }
+
 article img {
   width: 100%;
-  height:auto;
+  height: auto;
   padding: 10px;
 
 }
+
 article div {
   width: 100%;
   padding: 50px;
 }
+
 .info {
   width: 100%;
   padding: 25px;
 }
 
 .map {
-  display:none;
+  display: none;
 }
 
 #thisday {
-  display:none;
+  display: none;
   align-content: center;
   vertical-align: center;
   min-height: 50px;
-  margin:15px auto;
+  margin: 15px auto;
   height: 30px;
   text-align: center;
-  padding:15px;
+  padding: 15px;
   background-image: radial-gradient(rgb(255, 199, 155), rgb(250, 250, 89));
-  
+
 }
 
-/*------------------ Form Css------------------- */
-form fieldset{
+/*
+--------------------------------- 
+Form Css
+--------------------------------- 
+*/
+form fieldset {
   margin: 2rem 0;
   border: 2px solid rgb(117, 117, 131);
   border-radius: 10px;
 }
 
-form legend{
+form legend {
   margin: 0 1rem;
   padding: 0 .7rem;
 }
-form label.pinfo input, form label.sinfo input, form label.ainfo input {
-display:block;
-border: solid 1px #999;
-border-radius: 4px;
-padding: .75rem;
-width:100%;
-max-width:20rem;
-background-color: rgba(0,0,0,0.1);
+
+form label.pinfo input,
+form label.sinfo input,
+form label.ainfo input {
+  display: block;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-form label.pinfo{
-  display:block;
+form label.pinfo {
+  display: block;
   padding-top: 1rem;
   font-size: 1rem;
 }
-form label.dinfo{
-  display:block;
+
+form label.dinfo {
+  display: block;
   padding: .75rem;
 }
-.stormcenter{
-max-width: 300px;
-margin: 0 auto;
+
+.stormcenter {
+  max-width: 300px;
+  margin: 0 auto;
 }
-.sbutton{
-  border:none;
+
+.sbutton {
+  border: none;
   background-color: #9c2c13;
-  color:white;
-  border-radius:5px;
+  color: white;
+  border-radius: 5px;
   padding: .75rem 1.5rem;
-  width:96%;
+  width: 96%;
 }
-.ainfo{
-  width:100%;
-  height:200px;
+
+.ainfo {
+  width: 100%;
+  height: 200px;
   resize: none;
 }
+
 #input {
-  max-width:300px;
-  padding:10px;
+  max-width: 300px;
+  padding: 10px;
   border: 2px solid gray;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
 }
-
-

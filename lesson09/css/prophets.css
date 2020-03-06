@@ -1,6 +1,7 @@
 body{
     text-align: center;
-    background-color: rgb(168, 189, 168);
+    background-color: cornsilk;
+    
 }
 main {
     margin:0 auto;
@@ -18,16 +19,17 @@ footer{
 
 }
 .cards section{
+    font-size: 11pt;
     max-width: 100%;
     border:1px solid grey;
     border-radius: 5px;
-    background-color: rgb(138, 156, 138);
+    background-color: rgb(168, 189, 168);
     padding: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
 }
 .cards section img{
-    border: 1px solid gray;
+    border: 1px solid rgb(66, 66, 66);
     width: 70%;
+    box-shadow: 3px 3px 10px rgb(58, 56, 56);
     
     
 }
