@@ -84,4 +84,7 @@
     height: auto;
     border: 1px solid black;
   }
+  .index section {
+    grid-template-columns: 2fr;
+  }
 }

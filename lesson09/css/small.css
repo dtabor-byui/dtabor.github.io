@@ -77,6 +77,7 @@ header p {
 
 main {
   margin: 0 auto;
+  width: 100%;
   max-width: 1000px;
   padding: 10px;
 }
@@ -87,12 +88,17 @@ Home page Formating
 -----------------------------------------------------
 */
 .primary {
-  border: 1px dashed gray;
-  padding: 10px;
+  margin: 0 auto;
+  padding: auto;
+  width:100%;
+  overflow: auto;
+}
+.story {
+  width:100%;
 }
 .index {
-  
-  padding: 10px;
+  width: 100%;
+  padding: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 10px;
@@ -107,7 +113,7 @@ Home page Formating
   display: grid;
   grid-gap: 4px;
   grid-template-columns: 1fr;
-  padding:5px;
+  padding:auto;
   align-content: initial;
 }
 .index section:hover {
@@ -126,6 +132,7 @@ background-color: greenyellow;
 }
 
 .text{
+  width:inherit;
   font-family: Ubuntu;
   font-size: 11pt;
   padding:5px;
@@ -288,6 +295,7 @@ article {
 article img {
   width: 100%;
   height: auto;
+  padding: 10px;
 }
 
 article div {
