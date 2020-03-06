@@ -86,36 +86,53 @@ main {
 Home page Formating 
 -----------------------------------------------------
 */
-
+.primary {
+  border: 1px dashed gray;
+  padding: 10px;
+}
 .index {
-  border: 1px dashed green;
+  
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 10px;
 }
 
-.index article {
+.index section {
+  border-radius: 1em;
+  background-color: rgb(148, 163, 148);
+  margin:0;
   width: 100%;
-  height: 40em;
-  justify-content: center;
-  text-align: center;
-  border: 1px dashed red;
+  border: 1px solid gray;
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 4px;
   grid-template-columns: 1fr;
   padding:5px;
+  align-content: initial;
+}
+.index section:hover {
+background-color: greenyellow;
+}
+.index section h2{
+  font-family: Ubuntu;
+  margin: 0;
+  padding : 10px;
 }
 
-.index img {
+.index section img {
   width: 100%;
-  border: 1px dashed blue;
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding:3px;
 }
 
-.index .text{
-  border:1px dashed black;
+.text{
+  font-family: Ubuntu;
+  font-size: 11pt;
   padding:5px;
+}
+.text p{
+  margin:0;
+  padding: 0.2rem .8rem;
 }
 
 
@@ -271,8 +288,6 @@ article {
 article img {
   width: 100%;
   height: auto;
-  padding: 10px;
-
 }
 
 article div {
