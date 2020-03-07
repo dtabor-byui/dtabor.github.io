@@ -1,4 +1,4 @@
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
 
 
   #color {
@@ -26,5 +26,12 @@
   }
   .maindiv figure:hover {
     box-shadow: 0 3px 3px;
+  }
+  .index {
+    width: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
   }
 }

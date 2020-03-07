@@ -89,7 +89,7 @@ Home page Formating
 */
 .primary {
   margin: 0 auto;
-  padding: auto;
+  padding: 5px;
   width:100%;
   overflow: auto;
 }
@@ -98,9 +98,9 @@ Home page Formating
 }
 .index {
   width: 100%;
-  padding: auto;
+  padding: 5px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 10px;
 }
 
@@ -113,7 +113,7 @@ Home page Formating
   display: grid;
   grid-gap: 4px;
   grid-template-columns: 1fr;
-  padding:auto;
+  padding:5px;
   align-content: initial;
 }
 .index section:hover {
