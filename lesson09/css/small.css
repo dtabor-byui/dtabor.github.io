@@ -142,6 +142,28 @@ background-color: greenyellow;
   padding: 0.2rem .8rem;
 }
 
+.story {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  padding:10px;
+}
+.story2 {
+  padding: 5px;
+}
+.story1 {
+  padding: 5px;
+}
+.story1 a{
+  color: #697075;
+  padding: 10px;
+}
+.story1 img{
+  padding: 5px;
+  float:left;
+  width:30%;
+  
+}
+
 
 main #content1,
 #content2,
