@@ -114,11 +114,11 @@ Home page Formating
   grid-gap: 4px;
   grid-template-columns: 1fr;
   padding:5px;
-  align-content: initial;
 }
 .index section:hover {
 background-color: greenyellow;
 }
+
 .index section h2{
   font-family: Ubuntu;
   margin: 0;
@@ -126,7 +126,9 @@ background-color: greenyellow;
 }
 
 .index section img {
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgba(0, 0, 0, 0.1);
   padding:3px;
 }
@@ -373,6 +375,7 @@ form label.ainfo input {
   width: 100%;
   max-width: 20rem;
   background-color: rgba(0, 0, 0, 0.1);
+  margin:auto;
 }
 
 form label.pinfo {
@@ -387,7 +390,7 @@ form label.dinfo {
 }
 
 .stormcenter {
-  max-width: 300px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -407,9 +410,9 @@ form label.dinfo {
 }
 
 #input {
-  max-width: 300px;
+  max-width: 500px;
   padding: 10px;
-  border: 2px solid gray;
+  
   margin: 0 auto;
   text-align: center;
 }

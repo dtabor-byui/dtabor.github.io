@@ -1,4 +1,4 @@
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 970px) {
 
 
   #color {
@@ -33,5 +33,21 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
+    grid-template-rows: 1fr;
   }
+  .index section{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    
+  }
+  .index section img{
+    width:100%
+  }
+  .index section:nth-child(2) img{
+    width:100%;
+    order:0;
+  }
+    
+
 }
