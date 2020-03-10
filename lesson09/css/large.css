@@ -1,4 +1,4 @@
-@media only screen and (min-width: 970px) {
+@media only screen and (min-width: 980px) {
 
 
   #color {
@@ -28,7 +28,6 @@
     box-shadow: 0 3px 3px;
   }
   .index {
-    width: 100%;
     padding: 5px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -36,16 +35,13 @@
     grid-template-rows: 1fr;
   }
   .index section{
-    width:100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     
   }
-  .index section img{
-    width:100%
-  }
+ 
+  
   .index section:nth-child(2) img{
-    width:100%;
     order:0;
   }
     

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 550px) {
 
   .fiveday {
     margin-top: 20px;
@@ -85,24 +85,13 @@
     height: auto;
     border: 1px solid black;
   }
- .index {
-   margin:0;
-   width:100%;
-   display: grid;
-   grid-template-rows: 33% 33% 33%;
- }
   .index section {
-    width:100%;
     margin:0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
    
   }
-  .index section img{
-    width:80%; 
-  }
   .index section:nth-child(2) img{
-    width:80%; 
     order:3;
     
   }

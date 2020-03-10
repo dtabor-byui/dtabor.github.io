@@ -91,7 +91,6 @@ Home page Formating
   margin: 0 auto;
   padding: 5px;
   width:100%;
-  overflow: auto;
 }
 .story {
   width:100%;
@@ -126,7 +125,7 @@ background-color: greenyellow;
 }
 
 .index section img {
-  width: 90%;
+  width:90%;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(0, 0, 0, 0.1);
