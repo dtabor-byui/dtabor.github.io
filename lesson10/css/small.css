@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+------------------------------------------
+Link formating 
+------------------------------------------
+*/
+a:link {
+  color: rgba(0, 0, 0);
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:active {
+  color: white;
+}
+
+/*
+------------------------------------------
+Header Formating
+------------------------------------------
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Gelasio', serif;
+}
+
+/*
+------------------------------------------
+Page Formating 
+------------------------------------------
+*/
+html {
+  font-family: 'Gelasio', serif;
+}
+
+body {
+  min-width: 300px;
+  background-color: #EEEEEE;
+  font-family: "Gelasio";
+
+}
+
+/*
+-------------------------------------
+Header 
+-------------------------------------
+*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6E8F84;
+}
+
+header .img {
+  padding: 10px;
+}
+
+header div {
+  text-align: center;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 10px;
+}
+
+/*
+-----------------------------------------------------
+Home page Formating 
+-----------------------------------------------------
+*/
+.primary {
+  margin: 0 auto;
+  padding: 5px;
+  width:100%;
+}
+.story {
+  width:100%;
+}
+.index {
+  width: 100%;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.index section {
+  border-radius: 1em;
+  background-color: rgb(148, 163, 148);
+  margin:0;
+  width: 100%;
+  border: 1px solid gray;
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 1fr;
+  padding:5px;
+}
+.index section:hover {
+background-color: greenyellow;
+}
+
+.index section h2{
+  font-family: Ubuntu;
+  margin: 0;
+  padding : 10px;
+}
+
+.index section img {
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding:3px;
+}
+
+.text{
+  width:inherit;
+  font-family: Ubuntu;
+  font-size: 11pt;
+  padding:5px;
+}
+.text p{
+  margin:0;
+  padding: 0.2rem .8rem;
+}
+
+.story {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  padding:10px;
+}
+.story2 {
+  padding: 5px;
+}
+.story1 {
+  padding: 5px;
+}
+.story1 a{
+  color: #697075;
+  padding: 10px;
+}
+.story1 img{
+  padding: 5px;
+  float:left;
+  width:30%;
+  
+}
+
+
+main #content1,
+#content2,
+#content3,
+#content4,
+#content5 {
+  display: block;
+  margin: 15px auto;
+  padding: 5px;
+  border: 1px dashed;
+}
+
+main h2 {
+  text-align: center;
+}
+
+.maindiv {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-gap: 10px;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  overflow: auto;
+  padding: 15px;
+
+}
+
+.maindiv figure {
+  margin: 0;
+  padding: 15px;
+  border: 1px solid rgb(94, 92, 92);
+  background-color: rgb(183, 201, 195);
+}
+
+.maindiv figure img {
+  width: 100%;
+  border: 1px solid rgb(94, 92, 92);
+}
+
+.maindiv figure figcaption {
+  text-align: center;
+}
+
+footer {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #6E8F84;
+}
+
+
+/*
+------------------------------------------
+Navigation Menu 
+------------------------------------------
+*/
+
+nav button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+nav {
+  background-color: #9da4a8;
+  font-family: Verdana, sans-serif;
+  box-shadow: 0 3px 3px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0;
+  text-align: center;
+}
+
+nav li a {
+  display: block;
+  color: #1B0808;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav ul li.active {
+  background-color: #E0A77A;
+  color: #36454f;
+
+}
+
+nav ul li a:hover {
+  background-color: #E0A77A;
+  color: #36454f;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/*
+------------------------------------------
+Hero Image divs 
+------------------------------------------
+*/
+.herodiv {
+  margin: 0 auto;
+
+}
+
+picture {
+  height: auto;
+}
+
+picture img {
+  width: 100%;
+}
+
+
+.weathersum {
+  font-size: 14px;
+  color: black;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: cadetblue;
+  border: 1px solid rgb(87, 85, 85);
+  padding: 10px;
+  width: 150px;
+  height: 185px;
+  opacity: .93;
+}
+
+.fiveday {
+  display: none;
+}
+
+.fiveday h3 {
+  grid-column: 1 / span 5;
+}
+
+article {
+
+  align-content: center;
+  padding: 25px;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+article div {
+  width: 100%;
+  padding: 50px;
+}
+
+.info {
+  width: 100%;
+  padding: 25px;
+}
+
+.map {
+  display: none;
+}
+
+#thisday {
+  display: none;
+  align-content: center;
+  vertical-align: center;
+  min-height: 50px;
+  margin: 15px auto;
+  height: 30px;
+  text-align: center;
+  padding: 15px;
+  background-image: radial-gradient(rgb(255, 199, 155), rgb(250, 250, 89));
+
+}
+
+/*
+--------------------------------- 
+Form Css
+--------------------------------- 
+*/
+form fieldset {
+  margin: 2rem 0;
+  border: 2px solid rgb(117, 117, 131);
+  border-radius: 10px;
+}
+
+form legend {
+  margin: 0 1rem;
+  padding: 0 .7rem;
+}
+
+form label.pinfo input,
+form label.sinfo input,
+form label.ainfo input {
+  display: block;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin:auto;
+}
+
+form label.pinfo {
+  display: block;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+form label.dinfo {
+  display: block;
+  padding: .75rem;
+}
+
+.stormcenter {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.sbutton {
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 5px;
+  padding: .75rem 1.5rem;
+  width: 96%;
+}
+
+.ainfo {
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+
+#input {
+  max-width: 500px;
+  padding: 10px;
+  
+  margin: 0 auto;
+  text-align: center;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>The Cloudy Potato</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An index page with links to the other pages in this assignment">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/iconsmall.png" class="img" alt="The sun partially hidden by a cloud">
+        <div>
+            <h1>The Cloudy Potato</h1>
+            <p>Where Weather Lives ... </p>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="../index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="primary">
+            <h2> News and Events</h2>
+            <div class="story">
+
+                <div class="story1">
+                    <h3>Weekend Weather</h3>
+                    <p>
+                        <img src=images/plow.jpg alt="Snow plow removing snow">Weather over the
+                        weekend was quite eventful. The storm arrived around midnight and hit the area dumping three
+                        inches of snow and leaving the roads covered. IDT has been working hard to get them cleaned up.
+                        County and city crews have been working overtime to try to get their respective areas back to
+                        drivable conditions and are predicting relatively normal driving conditions over the next 24
+                        hours.<a
+                            href="https://hb.511.idaho.gov/#roadReports?timeFrame=TODAY&layers=roadReports%2CwinterDriving%2CweatherWarnings%2CotherStates">More
+                            Info ...</a>
+
+                </div>
+                <div class="story2">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+
+                        <li>Soda Springs Corn Festival - May-12-2020</li>
+                        <li>Preston 5k Fun Run - April-10-2020</li>
+                        <li>4th Anual Fishing Contest (Fish Haven) - Memorial Day Weekend</li>
+                        <li>Preston's Animal Shelter - Big Breakfast - July-26-2020</li>
+                        <li>Meal on Wheels Fundraiser - Soda Springs - Aug-06-2020 </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <div class="index">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2020 | David L. Tabor | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
+        Todays is : <a id="date"></a>
+    </footer>
+    <script src="js/newdate.js"></script>
+    <script src="js/togglemenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/wbfntld.js"></script>
+    <script src="js/homepage.js"></script>
+</body>
+
+</html>
