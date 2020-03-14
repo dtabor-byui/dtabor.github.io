@@ -275,6 +275,7 @@ Hero Image divs
 */
 .herodiv {
   margin: 0 auto;
+  width:100%;
 
 }
 
@@ -288,17 +289,18 @@ picture img {
 
 
 .weathersum {
-  font-size: 14px;
+  font-size: 13px;
   color: black;
   position: absolute;
   margin-top: 20px;
   margin-left: 20px;
   background-color: cadetblue;
   border: 1px solid rgb(87, 85, 85);
-  padding: 10px;
-  width: 150px;
-  height: 185px;
+  padding: 5px ;
+  width: auto
+  height: auto;
   opacity: .93;
+  line-height: .7;
 }
 
 .fiveday {
