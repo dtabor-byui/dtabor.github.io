@@ -1,4 +1,4 @@
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=d84c1685f942afd6215201b789f554fa";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=d84c1685f942afd6215201b789f554fa";
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -27,3 +27,4 @@ fetch(apiURL)
       return l;
     }
   });
+
