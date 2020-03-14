@@ -41,8 +41,6 @@ fetch(data)
 
                 index.appendChild(div);
                 
-                
-
                 document.querySelector('div.index').appendChild(index);
             }
 

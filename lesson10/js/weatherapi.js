@@ -1,17 +1,20 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=d84c1685f942afd6215201b789f554fa";
+const URL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=d84c1685f942afd6215201b789f554fa";
 
-fetch(apiURL)
+const URL1 = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&cnt=5&units=imperial&APPID=d84c1685f942afd6215201b789f554fa";
+
+fetch(URL)
   .then((response) => response.json())
 
-  .then((jsObject) => {
-    console.log(jsObject); //remove this LINE for production!
-    document.getElementById('currently').textContent = jsObject.weather[0].main;
-    document.getElementById('high').textContent = jsObject.main.temp_max + " ˚F";
-    document.getElementById('humidity').textContent = jsObject.main.humidity + " %";
-    document.getElementById('wind').textContent = jsObject.wind.speed + " mph";
+  .then((jsWeather) => {
+    console.log(jsWeather);
+    document.get
+    document.getElementById('currently').textContent = jsWeather.weather[0].main;
+    document.getElementById('high').textContent = jsWeather.main.temp_max + " ˚F";
+    document.getElementById('humidity').textContent = jsWeather.main.humidity + " %";
+    document.getElementById('wind').textContent = jsWeather.wind.speed + " mph";
 
-    var t = jsObject.main.temp;
-    var s = jsObject.wind.speed;
+    var t = jsWeather.main.temp;
+    var s = jsWeather.wind.speed;
 
     if (t <= 50 && s >= 3) {
       var windchills = windChill(t, s);
@@ -26,5 +29,59 @@ fetch(apiURL)
       var l = Math.round(f * 100) / 100;
       return l;
     }
-  });
+  })
 
+fetch(URL1)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsForecast) {
+    console.table(jsForecast);
+    const forecast = jsForecast['list'];
+    console.log(forecast);
+    
+    for (let i = 0; i < forecast.length; i++) {
+      let main = document.createElement('div');
+      let title = document.createElement('div');
+      let temperature = document.createElement('div');
+      let temp = document.createElement('p')
+      let h3= document.createElement('h3');
+      let image = document.createElement('img');
+      const src = 'https://openweathermap.org/img/w/' + jsForecast.list[i].weather[0].icon + '.png';
+    
+      let nd = new Date(forecast[i].dt_txt);
+      let day = new Array();
+      day[0] = "Sunday";
+      day[1] = "Monday";
+      day[2] = "Tuesday";
+      day[3] = "Wednesday";
+      day[4] = "Thursday";
+      day[5] = "Friday";
+      day[6] = "Saturday";
+      var newdayname = day[nd.getDay()];
+      console.log(d); //remove at production!!
+
+      h3.textContent = newdayname;
+
+      main.classList.add('fd-day');
+      title.classList.add('title');
+      temperature.classList.add('temperature');
+
+      
+      temp.textContent = forecast[i].main.temp;
+
+      image.setAttribute('src', src);
+      main.appendChild(title);
+      main.appendChild(temp);
+      main.appendChild(image)
+      title.appendChild(h3);
+      title.appendChild(image);
+      
+
+
+
+
+
+      document.querySelector('div.fiveday').appendChild(main);
+    }
+  })

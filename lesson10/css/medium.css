@@ -1,32 +1,37 @@
 @media only screen and (min-width: 550px) {
 
-  .fiveday {
-    margin-top: 20px;
+  
+  .fiveday{
+    display: flex;
+    flex-direction: row; 
     margin: 0 auto;
-    max-width: 420px;
-    display: grid;
-    justify-items:center;
-    align-items:center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: .5em;
-    padding: 10px;
+    border: 1px dashed red;
+    max-width:500px;
   }
-
-  .fiveday div {
-    margin:0 auto;
-    text-align: center;
-    width: 80px;
-    height: 100px;
-    padding: 5px;
-    border: 2px solid;
+  .fiveday .fd-day{
+    border:2px solid gray;
+    width:100%;
+    margin: 5px;
+    box-shadow: 2px 2px 10px gray;
     background-color: cadetblue;
   }
-
-  .fiveday div img {
-    align-content: center;
-    width: 70%;
+  .five-day .title{
+    width:80%;
   }
-
+  .fd-day img {
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    width:100%;
+    padding:5px;
+  }
+  .fd-day p {
+    width:100%;
+    text-align: center;
+    margin:0;
+    width:90%;
+    padding:7px;
+  }
   nav button {
     display: none;
   }
