@@ -9,8 +9,8 @@ fetch(URL)
     console.log(jsWeather);
     document.get
     document.getElementById('currently').textContent = jsWeather.weather[0].main;
-    document.getElementById('high').textContent = jsWeather.main.temp + " ˚F";
-    document.getElementById('humidity').textContent = jsWeather.main.humidity + " %";
+    document.getElementById('high').textContent = jsWeather.main.temp + "˚F";
+    document.getElementById('humidity').textContent = jsWeather.main.humidity + "%";
     document.getElementById('wind').textContent = jsWeather.wind.speed + " mph";
 
     var t = jsWeather.main.temp;
@@ -73,7 +73,7 @@ fetch(URL1)
         main.appendChild(temp);
         main.appendChild(image)
         title.appendChild(h3);
-        title.appendChild(image);
+        main.appendChild(image);
 
         document.querySelector('div.fiveday').appendChild(main);
       }
