@@ -92,9 +92,6 @@ Home page Formating
   padding: 5px;
   width:100%;
 }
-.story {
-  width:100%;
-}
 .index {
   width: 100%;
   padding: 5px;
@@ -145,7 +142,6 @@ background-color: greenyellow;
 
 .story {
   display: grid;
-  grid-template-columns:1fr 1fr;
   padding:10px;
 }
 .story2 {
