@@ -1,6 +1,6 @@
-const URL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=d84c1685f942afd6215201b789f554fa";
+const URL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=d84c1685f942afd6215201b789f554fa";
 
-const URL1 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=d84c1685f942afd6215201b789f554fa";
+const URL1 = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=d84c1685f942afd6215201b789f554fa";
 
 fetch(URL)
   .then((response) => response.json())
@@ -44,10 +44,9 @@ fetch(URL1)
         let main = document.createElement('div');
         let title = document.createElement('div');
         let temperature = document.createElement('div');
-        let image = document.createElement('img');
         let temp = document.createElement('p')
         let h3 = document.createElement('h3');
-
+        let image = document.createElement('img');
         const src = 'https://openweathermap.org/img/w/' + jsForecast.list[i].weather[0].icon + '.png';
 
 
@@ -70,15 +69,13 @@ fetch(URL1)
         temp.textContent = forecast[i].main.temp;
 
         image.setAttribute('src', src);
-
         main.appendChild(title);
+        main.appendChild(temp);
+        main.appendChild(image)
         title.appendChild(h3);
         main.appendChild(image);
-        main.appendChild(temp);
-        
-        main.appendChild(image);
 
-        document.querySelector('div.fiveday').appendChild(main);
+        document.querySelector('div.fd-title').appendChild(main);
       }
     }
   })

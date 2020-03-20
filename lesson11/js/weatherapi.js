@@ -75,7 +75,7 @@ fetch(URL1)
         title.appendChild(h3);
         main.appendChild(image);
 
-        document.querySelector('div.fiveday').appendChild(main);
+        document.querySelector('div.fd-title').appendChild(main);
       }
     }
   })
