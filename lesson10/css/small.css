@@ -301,11 +301,14 @@ picture img {
 
 
 article {
-
-  align-content: center;
+  display:grid;
+  grid-column: 1/ span 2;
   padding: 25px;
 }
 
+article p {
+ padding: 0; 
+}
 article img {
   width: 100%;
   height: auto;

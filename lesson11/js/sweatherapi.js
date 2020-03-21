@@ -7,7 +7,7 @@ fetch(URL)
 
   .then((jsWeather) => {
     console.log(jsWeather);
-    document.get
+  
     document.getElementById('currently').textContent = jsWeather.weather[0].main;
     document.getElementById('high').textContent = jsWeather.main.temp + "˚F";
     document.getElementById('humidity').textContent = jsWeather.main.humidity + "%";
@@ -73,7 +73,7 @@ fetch(URL1)
         main.appendChild(temp);
         main.appendChild(image)
         title.appendChild(h3);
-        main.appendChild(image);
+    
 
         document.querySelector('div.fd-title').appendChild(main);
       }
