@@ -17,7 +17,6 @@ fetch(data)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject);
         const town = jsonObject['towns'];
 
         for (let i = 0; i < town.length; i++) {
