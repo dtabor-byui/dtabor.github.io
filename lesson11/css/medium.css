@@ -90,15 +90,24 @@
   .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
     padding: 25px;
   }
-
-  .info {
-    width: 80%;
-    margin-left:1em;
-    height:auto;
-    padding: 35px;
+ 
+  .events section{
+    padding: 10px;
+    margin:0;
   }
+  .events section p {
+    padding: 0;
+    margin:0;
+  }
+  .events section h4{
+    margin:0;
+    padding:5px;
+    text-align: center;
+  }
+
  .map {
    display: block;
     width: 80%;

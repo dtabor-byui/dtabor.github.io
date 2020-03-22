@@ -411,5 +411,17 @@ form label.dinfo {
 #map {
   height:400px;
   width:100%;
+
+}
+.info {
+  margin:0;
+  display:grid;
+  grid-gap: 20px;
   
+}
+.events {
+  background-color: lightgrey;
+  box-shadow: 1px 1px 10px gray;
+  width:80%;
+  padding:10px;
 }

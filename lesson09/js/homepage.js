@@ -34,12 +34,13 @@ fetch(data)
 
                 index.appendChild(h2);
                 index.appendChild(image);
+                index.appendChild(div);
                 div.appendChild(p);
                 div.appendChild(pop);
                 div.appendChild(year);
                 div.appendChild(rain);
 
-                index.appendChild(div);
+                
                 
                 
 

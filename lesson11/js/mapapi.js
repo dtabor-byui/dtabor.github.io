@@ -13,7 +13,7 @@ else if (page.match(/sodasprings/)) {
 else if (page.match(/fishhaven/)) {
     myCenter = fcenter;
 }
-console.log(myCenter);
+
 function initialize(){
     var mapProp = {
         center:myCenter,
