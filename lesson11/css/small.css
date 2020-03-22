@@ -408,3 +408,8 @@ form label.dinfo {
   margin: 0 auto;
   text-align: center;
 }
+#map {
+  height:400px;
+  width:100%;
+  
+}

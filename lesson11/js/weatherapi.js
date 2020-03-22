@@ -6,7 +6,6 @@ fetch(URL)
   .then((response) => response.json())
 
   .then((jsWeather) => {
-    console.log(jsWeather);
     document.getElementById('currently').textContent = jsWeather.weather[0].main;
     document.getElementById('high').textContent = jsWeather.main.temp + "˚F";
     document.getElementById('humidity').textContent = jsWeather.main.humidity + "%";
@@ -36,7 +35,7 @@ fetch(URL1)
   })
   .then(function (jsForecast) {
     const forecast = jsForecast['list'];
-    console.log(forecast);
+    
 
     for (let i = 0; i < forecast.length; i++) {
       if (forecast[i].dt_txt.includes("18:00:00")) {
@@ -79,6 +78,3 @@ fetch(URL1)
     }
   })
 
-function newFunction(forecast) {
-  console.log(forecast);
-}
