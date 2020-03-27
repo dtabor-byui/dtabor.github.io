@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+------------------------------------------
+Main Page Formating 
+------------------------------------------
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gelasio', serif;
+}
+
+html {
+    font-family: 'Gelasio', serif;
+    background-color: black;
+    padding: 50px;
+}
+/* ---------------------------------------
+          Header Css
+----------------------------------------*/
+header {
+    color: rgb(58, 238, 118);
+}
+header img {
+    width:100%;
+    height:auto;
+    padding:0;
+    margin:0;
+}
+header h1 {
+    background-color: rgb(31, 28, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+    position: absolute;
+    margin-left: 30px;
+    opacity: .8;
+    padding:5px;
+}
+
+
+
+
+body {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 1500px;
+    background-color: #EEEEEE;
+    font-family: "Gelasio";
+    padding: 10px;
+}
+
+main {
+    border: 1px dashed green;
+    height: 1200px;
+    padding: 10px;
+    background-color: green;
+}
+
+footer {
+    border: 1px dashed blue;
+    height: 80px;
+    padding: 10px;
+    background-color: yellow;
+}
+
+/* ----------------------------------------
+              Navigation Menu
+------------------------------------------*/
+
+nav {
+    background-color: #9da4a8;
+    font-family: Verdana, sans-serif;
+    box-shadow: 0 3px 3px;
+  }
+  
+  nav ul {
+    align-items: center;
+    display:flex;
+    max-width: 100px;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 700px;
+    height:30px;
+    padding: 0;
+    text-align: center;
+   
+  }
+  
+  nav ul li {
+    flex: 1 1;
+  }
+nav ul li a{
+    text-decoration: none;
+}
