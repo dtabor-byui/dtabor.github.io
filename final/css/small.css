@@ -54,25 +54,27 @@ header h3 {
 body {
     background-color: #EEEEEE;
     font-family: "Gelasio";
-    
+
 }
 
 main {
-    margin:0 auto;
+    margin: 0 auto;
     max-width: 800px;
     height: auto;
     display: grid;
     grid-gap: 10px;
-    padding:5px;
-    
+    padding: 5px;
+
 }
+
 main article {
-    width:100%;
-    
+    width: 100%;
+
 }
+
 main article img {
-    width:100%;
-   
+    width: 100%;
+
 }
 
 main section {
@@ -81,76 +83,96 @@ main section {
     display: inline-grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-gap: 10px;
+    margin-bottom: 10px;
 }
 
 main section div {
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
+    /*do not add padding causes map issues */
 }
+.text-1{
+    margin-bottom: 15px;
+}
+
+main section div h3 {
+    margin: 10px;
+    padding: 5px;
+}
+
 .weather {
-    padding:25px;
-    background-color: #698cc4 ;
+    background-color: #698cc4;
     color: honeydew;
     text-align: center;
     justify-content: center;
-    width:100%; 
+    width: 100%;
     border: 3px solid grey;
 }
+
 .weather-text {
     text-align: center;
 }
-.weather-forcast{
+
+.weather-forcast {
     display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
-.fd-day{
-    border:2px solid gray;
+
+.fd-day {
+    border: 2px solid gray;
     justify-content: center;
     min-width: 100px;
-    width:100px;
+    width: 100px;
     height: 130px;
     margin: 5px;
-    padding:5px;
+    padding: 5px;
     box-shadow: 2px 2px 10px gray;
     background-color: rgb(78, 95, 128);
-  }
- 
-
-  .fd-day img {
-    margin-left: 20%;
-    width:70%;
+}
+.title {
     padding:5px;
-  }
-  .fd-day h3{
+}
+
+.fd-day img {
+    margin: 0;
+    width: 70%;
+    padding: 0;
+}
+
+.fd-day h3 {
     font-size: 12pt;
-    margin:0;
-    width:100%;
+    margin: 0;
+    padding:0;
+    width: 100%;
     text-align: center;
-    
-  }
-  .fd-day p {
-    width:100%;
+
+}
+
+.fd-day p {
+    width: 100%;
     text-align: center;
-    margin:0;
-    width:90%;
-    padding:7px;
-  }
+    width: 90%;
+    margin: 0;
+}
 
 main section div img {
     width: 100%;
 }
+
 #map {
     display: block;
-     width: 100%;
-     height: auto;
-     border: 3px solid grey;
-   }
+    width: 100%;
+    height: auto;
+    border: 3px solid grey;
+}
 
 
 
 footer {
     align-content: center;
     font-size: 15pt;
-    padding:10px;
+    padding: 10px;
     text-align: center;
     width: 100%;
     height: 80px;
@@ -171,7 +193,7 @@ nav ul {
     align-items: center;
     display: flex;
     max-width: 100px;
-    
+
     list-style-type: none;
     margin: 0 auto;
     max-width: 700px;
@@ -183,19 +205,50 @@ nav ul {
 
 nav ul li {
     flex: 1 1;
-    
+
 }
 
 nav li a {
     text-decoration: none;
     color: #062658;
-    padding:8px;
+    padding: 8px;
 }
+
 nav a:hover {
     background-color: rgb(180, 113, 101);
 }
+
 nav .active {
-    padding:8px;
+    padding: 8px;
     background-color: rgb(180, 113, 101);
     border-radius: 5px;
 }
+/*--------------------------------------------------------
+            TEST CODE
+--------------------------------------------------------*/
+.specials {
+    background: tomato;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    
+  }
+  .specials h3{
+      margin-left: 60px;
+  }
+.specials:before,
+.specials:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background: tomato;
+  }
+  .specials:before {
+    transform: rotate(30deg);
+  }
+  .specials:after {
+    transform: rotate(60deg);
+  }
