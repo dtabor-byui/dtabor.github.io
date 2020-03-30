@@ -36,8 +36,8 @@ if (iDay != 6 && iDay != 5) {
     let main = document.createElement('div');
     let para = document.createElement('p')
 
-   /* h2.textContent = town[i].name;
-    p.textContent = 'Motto: ' + town[i].motto;
+   /* 
+    para.textContent = ' If you come in today you will recieve a 20% discount;
     pop.textContent = 'Population: ' + town[i].currentPopulation;
     year.textContent = 'Year Founded: ' + town[i].yearFounded;
     rain.textContent = 'Average Rainfall: ' +town[i].averageRainfall;
