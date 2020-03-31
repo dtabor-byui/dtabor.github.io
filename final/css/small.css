@@ -89,9 +89,10 @@ main section {
 main section div {
     width: 100%;
     height: auto;
-    /*do not add padding causes map issues */
+    /*do not add padding it causes map issues */
 }
-.text-1{
+
+.text-1 {
     margin-bottom: 15px;
 }
 
@@ -112,45 +113,46 @@ main section div h3 {
 .weather-text {
     text-align: center;
 }
+.weather-text p {
+    margin:0;
+    padding:0;
+}
 
 .weather-forcast {
     display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
 }
 
-.fd-day {
+.forecast-day {
     border: 2px solid gray;
     justify-content: center;
-    min-width: 100px;
-    width: 100px;
     height: 130px;
     margin: 5px;
-    padding: 5px;
-    box-shadow: 2px 2px 10px gray;
+    padding: 0;
+    /*must remain 0 or extends past border on small view */
+    box-shadow: 2px 2px 10px rgb(54, 52, 52);
     background-color: rgb(78, 95, 128);
 }
-.title {
-    padding:5px;
+
+.forecast-title {
+    padding: 5px;
 }
 
-.fd-day img {
+.forecast-day img {
     margin: 0;
     width: 70%;
     padding: 0;
 }
 
-.fd-day h3 {
+.forecast-day h3 {
     font-size: 12pt;
     margin: 0;
-    padding:0;
+    padding: 0;
     width: 100%;
     text-align: center;
 
 }
 
-.fd-day p {
-    width: 100%;
+.forecast-day p {
     text-align: center;
     width: 90%;
     margin: 0;
@@ -163,7 +165,7 @@ main section div img {
 #map {
     display: block;
     width: 100%;
-    height: auto;
+    height: 400px;
     border: 3px solid grey;
 }
 
@@ -186,6 +188,7 @@ footer {
 nav {
     background-color: #bdb4a8;
     font-family: Verdana, sans-serif;
+    font-size: 10pt;
     box-shadow: 0 3px 3px;
 }
 
@@ -193,7 +196,6 @@ nav ul {
     align-items: center;
     display: flex;
     max-width: 100px;
-
     list-style-type: none;
     margin: 0 auto;
     max-width: 700px;
@@ -211,7 +213,6 @@ nav ul li {
 nav li a {
     text-decoration: none;
     color: #062658;
-    padding: 8px;
 }
 
 nav a:hover {
@@ -223,32 +224,54 @@ nav .active {
     background-color: rgb(180, 113, 101);
     border-radius: 5px;
 }
+
 /*--------------------------------------------------------
             TEST CODE
 --------------------------------------------------------*/
 .specials {
     background: tomato;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     position: relative;
-    
-  }
-  .specials h3{
-      margin-left: 60px;
-  }
+    margin-top: 20px;
+}
+
+.specials h3 {
+    margin-left: 40px;
+}
+
 .specials:before,
 .specials:after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     background: tomato;
-  }
-  .specials:before {
+}
+
+.specials:before {
     transform: rotate(30deg);
-  }
-  .specials:after {
+}
+
+.specials:after {
     transform: rotate(60deg);
-  }
+}
+
+.spec-1 {
+    min-width: 300px;
+}
+
+.contact {
+    padding:25px;
+    width:100%;
+    height: auto;
+    line-height: 50px;
+    margin-top: 100px;
+    font-size: 13pt;
+    font-weight: 700;
+}
+.final-pic {
+    order: 3
+}

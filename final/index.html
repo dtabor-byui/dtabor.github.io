@@ -51,18 +51,44 @@
                 record.
 
             </div>
-            <div class="specials">
+            <div class="text-2">
+                <div class="specials"></div>
                 <h3>Specials</h3>
+
             </div>
         </section>
         <article>
             <div class="container-4">
-                <img src="images/header1.jpg">
-                <!--Need smaller image source -->
+                <picture>
+                    <source media="(max-width: 530px)" srcset="images/header1-small.jpg">
+                    <source media="(max-width: 800px)" srcset="images/header1-med.jpg">
+                    <img src="images/header1-large.jpg" alt="A raft of people with one waving at viewer">
+                </picture>
+
 
             </div>
         </article>
         <section>
+            <div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+            <div>
+                <img src="images/mid-sect.jpg">
+            </div>
+        </section>
+        <section>
+
+            <div class="final-pic">
+                <img src="images/final-jpg.jpg">
+            </div>
             <div class="weather">
                 <div class="weather-text">
                     <p>Currently: <span id="currently"></span></p>
@@ -71,12 +97,10 @@
                     <p>Humidity : <span id="humidity"> </span></p>
                     <p>Windchill= <span id="windchill"></span>&deg;</p>
                 </div>
-                <div class="weather-forcast">
-
-                </div>
-
+                <div class="weather-forcast"></div>
             </div>
-            <div id="map"></div>
+            
+
         </section>
     </main>
     <!--footer below this line-->
@@ -84,8 +108,6 @@
         &copy; 2020 | Salmon River Adventures |Riggins Idaho | <br>
         Weather info brought to you by openweathermap.org <a href="http://openweathermap.org">Click here</a> to visit
     </footer>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAmlVQvZ7Gaq58E3-a_CyxOO4--jdy5Ns"></script>
-    <script src="js/mapapi.js"></script>
     <script src="js/weatherapi.js"></script>
     <script src="js/specials.js"></script>
 </body>

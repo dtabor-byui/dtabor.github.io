@@ -61,9 +61,9 @@ fetch(URL1)
         var newdayname = day[nd.getDay()];
         h3.textContent = newdayname;
 
-        main.classList.add('fd-day');
-        title.classList.add('title');
-        temperature.classList.add('temperature');
+        main.classList.add('forecast-day');
+        title.classList.add('forecast-title');
+        temperature.classList.add('forecast-temperature');
 
         temp.textContent = forecast[i].main.temp;
 

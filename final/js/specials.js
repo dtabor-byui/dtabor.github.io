@@ -32,21 +32,39 @@ var mMonth = month[date.getMonth()];
 var iMonth = month.indexOf(mMonth);
 var iDay = day.indexOf(dDay);
 
-if (iDay != 6 && iDay != 5) {
+if (iDay != 6 && iDay != 5 ) {
     let main = document.createElement('div');
-    let para = document.createElement('p')
-
-   /* 
-    para.textContent = ' If you come in today you will recieve a 20% discount;
-    pop.textContent = 'Population: ' + town[i].currentPopulation;
-    year.textContent = 'Year Founded: ' + town[i].yearFounded;
-    rain.textContent = 'Average Rainfall: ' +town[i].averageRainfall;
-    */
+    let para = document.createElement('li')
+    main.classList.add('spec-1');
     
+    para.textContent = 'If you ride with us today you will recieve a 20% discount';
+    
+    main.appendChild(para);
+    document.querySelector('div.text-2').appendChild(main);
+} else if (iMonth != 05 && iMonth != 06 && iMonth != 07 && iMonth != 08) {
+    let main = document.createElement('div');
+    let para = document.createElement('li')
+    main.classList.add('spec-1');
+    
+    para.textContent = 'If you book and pay for a trip today you will recieve a 20% discount';
+    
+    main.appendChild(para);
+    document.querySelector('div.text-2').appendChild(main);
+} else {
+    let main = document.createElement('div');
+    let para = document.createElement('li')
+    main.classList.add('spec-1');
+    
+    para.textContent = 'Call today for optional discounts';
+    
+    main.appendChild(para);
+    document.querySelector('div.text-2').appendChild(main);
 }
 
 
 // delete before Production
+console.log(day);
+console.log(month);
 console.log(date);
 console.log(mMonth);
 console.log(dDay);
