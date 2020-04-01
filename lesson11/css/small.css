@@ -324,7 +324,7 @@ article div {
   padding: 25px;
 }
 
-.map {
+#map {
   display: none;
 }
 
@@ -408,11 +408,7 @@ form label.dinfo {
   margin: 0 auto;
   text-align: center;
 }
-#map {
-  height:400px;
-  width:100%;
 
-}
 .info {
   margin:0;
   display:grid;
