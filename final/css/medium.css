@@ -24,7 +24,7 @@
     }
     main article {
         display: inline;
-        width: 100%;
+        
     
     }
     .weather{
@@ -33,6 +33,16 @@
     footer {
      
         height: 80px;
+       
+    }
+
+    .contacts{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    #map {
+        
+        width: 45vw;
        
     }
     
