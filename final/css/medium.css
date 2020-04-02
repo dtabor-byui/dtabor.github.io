@@ -8,8 +8,33 @@
         font-weight: 500;
        
     }
-    .final-pic {
-        order: 0
+    .list{
+        order:0;
     }
+    .final-pic {
+        order: 0;
+    }
+    
+    header {
+        font-size: 15pt;
+        
+    }
+    main section {
+        grid-template-columns: 1fr 1fr;
+    }
+    main article {
+        display: inline;
+        width: 100%;
+    
+    }
+    .weather{
+        padding:10px;
+    }
+    footer {
+     
+        height: 80px;
+       
+    }
+    
 
 }

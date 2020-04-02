@@ -1,0 +1,21 @@
+@media only screen and (min-width: 950px) {
+    nav li a {
+        padding:8px;
+    }
+
+    nav {
+        font-size: 13pt;
+        font-weight: 500;
+       
+    }
+    .final-pic {
+        order: 0;
+    }
+    header {
+        font-size: 22pt;
+        
+        
+    }
+
+
+}
