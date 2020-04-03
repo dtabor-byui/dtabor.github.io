@@ -266,11 +266,13 @@ nav .active {
 .guides {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding:25px;
-    grid-gap: 15px;
+    padding:0px;
+    grid-gap: 10px;
+    
     
 }
 .guides section{
+    margin:0 auto;
     text-align: center;
     display:grid;
     grid-template-columns: 1fr;
@@ -279,11 +281,12 @@ nav .active {
     border-radius: 10px;
     border: 2px solid gray;
     box-shadow: 5px 5px 10px grey;
+    width:100%;
     
 }
 .guides section img {
     margin:0 auto;
-    width:100%;
+    width:80%;
     border:2px solid cornflowerblue;
 }
 
