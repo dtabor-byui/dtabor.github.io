@@ -41,13 +41,12 @@
         "currentPhoto": "teddy.jpg"
       },
       {
-        "name": "Franklin",
-        "photo": "franklin.jpg",
-        "motto": "Where you will growl!",
-        "birthYear": 2016,
-        "yearEmployed": 2016,
-        "yearStartedRafting": 2016,
-        "currentPhoto": "franklin.jpg"
+        "name": "Jim Michaels",
+        "motto": "I hate mottos",
+        "birthYear": 1964,
+        "yearEmployed": 2001,
+        "yearStartedRafting": 1990,
+        "currentPhoto": "jim.jpg"
       }
     ]
   }
