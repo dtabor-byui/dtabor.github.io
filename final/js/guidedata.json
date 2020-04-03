@@ -25,13 +25,12 @@
         "currentPhoto": "bob.jpg"
       },
       {
-        "name": "Franklin",
-        "photo": "franklin.jpg",
-        "motto": "Where you will growl!",
-        "birthYear": 2016,
-        "yearEmployed": 2016,
-        "yearStartedRafting": 2016,
-        "currentPhoto": "franklin.jpg"
+        "name": "Jennifer Gillman",
+        "motto": "Don't stop believing",
+        "birthYear": 1989,
+        "yearEmployed": 2011,
+        "yearStartedRafting": 2011,
+        "currentPhoto": "jennifer.jpg"
       },
       {
         "name": "Franklin",
