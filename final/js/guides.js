@@ -6,12 +6,11 @@ fetch(data)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject);
-        const town = jsonObject['towns'];
+        console.table(jsonObject);/*DELETE BEFORE PRODUCTION*/
+        const guides = jsonObject['guides'];
 
-        for (let i = 0; i < town.length; i++) {
-            if (town[i].name == 'Preston' || town[i].name == 'Soda Springs' || town[i].name == 'Fish Haven') {
-
+        for (let i = 0; i < guides.length; i++) {
+        
                 let index = document.createElement('section');
                 let h2 = document.createElement('h2');
                 let p = document.createElement('p');
@@ -23,13 +22,12 @@ fetch(data)
                 div.classList.add('text');
 
 
-                var photo = 'images/' + town[i].photo
+                var photo = 'images/' + guides[i].currentPhoto
 
-                h2.textContent = town[i].name;
-                p.textContent = 'Motto: ' + town[i].motto;
-                pop.textContent = 'Population: ' + town[i].currentPopulation;
-                year.textContent = 'Year Founded: ' + town[i].yearFounded;
-                rain.textContent = 'Average Rainfall: ' +town[i].averageRainfall;
+                h2.textContent = guides[i].name;
+                p.textContent = 'Motto: ' + guides[i].motto;
+                pop.textContent = 'Year employed ' + guides[i].currentPopulation;
+                year.textContent = 'Rafting Since :' + guides[i].yearFounded;
                 image.setAttribute('src', photo);
 
                 index.appendChild(h2);
@@ -41,8 +39,8 @@ fetch(data)
 
                 index.appendChild(div);
                 
-                document.querySelector('div.index').appendChild(index);
-            }
+                document.querySelector('div.guides').appendChild(index);
+            
 
         }
 
