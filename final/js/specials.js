@@ -41,7 +41,8 @@ if (iDay != 6 && iDay != 5 ) {
     
     main.appendChild(para);
     document.querySelector('div.text-2').appendChild(main);
-} else if (iMonth != 05 && iMonth != 06 && iMonth != 07 && iMonth != 08) {
+} 
+ if (iMonth != 05 && iMonth != 06 && iMonth != 07 && iMonth != 08) {
     let main = document.createElement('div');
     let para = document.createElement('li')
     main.classList.add('spec-1');
@@ -55,18 +56,10 @@ if (iDay != 6 && iDay != 5 ) {
     let para = document.createElement('li')
     main.classList.add('spec-1');
     
-    para.textContent = 'Call today for optional discounts';
+    para.textContent = 'Call today for other potential discounts';
     
     main.appendChild(para);
     document.querySelector('div.text-2').appendChild(main);
 }
 
 
-// delete before Production
-console.log(day);
-console.log(month);
-console.log(date);
-console.log(mMonth);
-console.log(dDay);
-console.log(iMonth);
-console.log(iDay);

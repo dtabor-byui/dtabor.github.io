@@ -3,6 +3,7 @@
 <!-- Head Section -->
 
 <head>
+    <!--Need favicon-->
     <title>Salmon River Adventures</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +23,7 @@
         <div class="header-div">
             <h1>Salmon River Adventures</h1>
             <h3>Where adventure lives ...</h3>
-            <img src="" alt="">
-            <!--Need icon/logo -->
+
         </div>
 
 
@@ -31,7 +31,7 @@
     <!--Navigaition Section-->
     <nav>
         <ul>
-            <li ><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="guides.html">Guides</a></li>
             <li><a href="reservations.html">Packages</a></li>
             <li class="active"><a href="contact.html">Contact us</a></li>
@@ -41,6 +41,9 @@
     <!--Main body below this line -->
     <main>
         <div class="contacts">
+            <div id="map">
+
+            </div>
             <div class="contact">
                 <p>Name: Salmon River Adventures</p>
                 <p>Email : admin@salmonadventures.com</p>
@@ -52,18 +55,33 @@
 
                 </div>
             </div>
-            <div id="map">
+            <!--Need to setup thanks.html page-->
+            <form method="get" action="thanks.html" id="input">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="pinfo">Full Name*<input type="text" name="fullname" required
+                            pattern="[A-Za-z ]{5,}"></label>
+                    <label class="pinfo">Phone*<input type="tel" name="phone" placeholder="123-555-1234"
+                            required></label>
+                    <label class="pinfo">Zip Code* <input type="number" name="zip" required></label>
+                    <label class="pinfo">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="ainfo"><textarea name="comment" class="ainfo"
+                            placeholder="Enter your question here ..."></textarea></label>
+                            <input type="submit" value="Send my report" class="sbutton">
+                </fieldset>
                 
-            </div>
+            </form>
 
         </div>
+        
+        
     </main>
     <!--footer below this line-->
     <footer>
         &copy; 2020 | Salmon River Adventures |Riggins Idaho | <br>
         Weather info brought to you by openweathermap.org <a href="http://openweathermap.org">Click here</a> to visit
     </footer>
-    >
+
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/wbfntld.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAmlVQvZ7Gaq58E3-a_CyxOO4--jdy5Ns"></script>

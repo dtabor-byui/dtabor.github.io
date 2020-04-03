@@ -38,11 +38,17 @@
 
     .contacts{
         grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 10px;
+        
+    }
+    .contact{
+        font-size: 13pt;
         
     }
     #map {
-        
-        width: 45vw;
+        grid-column: 1 / -1;
+        width: 100%;
        
     }
     

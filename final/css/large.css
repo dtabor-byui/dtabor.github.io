@@ -17,11 +17,15 @@
         
     }
     #map {
-        
-        width: 30vw;
-        height: 30vh;
-       
+        padding:5px;
+        margin:0 auto;
+        width: 100%;
     }
+    .contact{
+        font-size: 15pt;
+        
+    }
+    
 
 
 }

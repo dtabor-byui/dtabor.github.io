@@ -234,21 +234,24 @@ nav .active {
 .contacts{
     display:grid;
     grid-template-columns: 1fr;
-    padding: 25px;
+    margin:0;
+    padding:10px;
     
     
 }
 .contact {
     padding:25px;
     width:100%;
-    font-size: 13pt;
+    font-size: 10pt;
     font-weight: 700;
+    
 }
 #map {
     display: block;
-    width: 90vw;
-    height: 20vh;
+    width: 100%;
+    height: 300px;
     border: 3px solid grey;
+    grid-column: 1 / -1;
 }
 
 .final-pic {
@@ -291,5 +294,41 @@ nav .active {
 .specials:after {
     transform: rotate(60deg);
 }
+/*----------------------------------------------
+        Form CSS
+------------------------------------------*/
+form{
+    padding:0;
+    margin:0;
+}
+form fieldset {
+    border: 2px solid rgb(117, 117, 131);
+    border-radius: 10px;
+    
+  }
+  
+  form legend {
+    margin: 0 1rem;
+    padding: 0 .1rem;
+  }
 
-
+  form label.pinfo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px 1fr));
+  }
+  form label.pinfo input,
+  form label.sinfo input,
+  form label.ainfo input {
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin:auto;
+  }
+  .ainfo {
+    width: 100%;
+    height: 150px;
+    resize: none;
+  }
