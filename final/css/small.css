@@ -260,6 +260,20 @@ nav .active {
 .list{
     order:2;
 }
+/*------------------------------------------------------
+            Guides Page Css
+------------------------------------------------------*/
+.guides {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding:10px;
+}
+.guides section{
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
 
 /*--------------------------------------------------------
            CSS  Star for the Specials section

@@ -26,8 +26,8 @@ fetch(data)
 
                 h2.textContent = guides[i].name;
                 p.textContent = 'Motto: ' + guides[i].motto;
-                pop.textContent = 'Year employed ' + guides[i].currentPopulation;
-                year.textContent = 'Rafting Since :' + guides[i].yearFounded;
+                pop.textContent = 'Year employed ' + guides[i].yearEmployed;
+                year.textContent = 'Rafting Since :' + guides[i].yearStartedRafting;
                 image.setAttribute('src', photo);
 
                 index.appendChild(h2);

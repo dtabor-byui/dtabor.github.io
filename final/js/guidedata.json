@@ -2,7 +2,6 @@
     "guides": [
       {
         "name": "Franklin",
-        "photo": "franklin.jpg",
         "motto": "Where you will growl!",
         "birthYear": 2016,
         "yearEmployed": 2016,
@@ -10,13 +9,12 @@
         "currentPhoto": "franklin.jpg"
       },
       {
-        "name": "Franklin",
-        "photo": "franklin.jpg",
-        "motto": "Where you will growl!",
-        "birthYear": 2016,
-        "yearEmployed": 2016,
-        "yearStartedRafting": 2016,
-        "currentPhoto": "franklin.jpg"
+        "name": "Elvis, Anderson",
+        "motto": "Keep paddling",
+        "birthYear": 1990,
+        "yearEmployed": 2010,
+        "yearStartedRafting": 1995,
+        "currentPhoto": "elvis.jpg"
       },
       {
         "name": "Franklin",
