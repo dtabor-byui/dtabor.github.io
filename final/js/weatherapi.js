@@ -36,7 +36,7 @@ fetch(URL1)
   .then(function (jsForecast) {
     const forecast = jsForecast['list'];
     var a = 0;
-    
+
 
     for (let i = 0; i < forecast.length && a <= 2; i++) {
       if (forecast[i].dt_txt.includes("18:00:00")) {
@@ -47,7 +47,7 @@ fetch(URL1)
         let h3 = document.createElement('h3');
         let image = document.createElement('img');
         const src = 'https://openweathermap.org/img/w/' + jsForecast.list[i].weather[0].icon + '.png';
-
+        var alt = 'An image to discribe the current weather';
 
         let nd = new Date(forecast[i].dt_txt);
         let day = new Array();
@@ -68,15 +68,16 @@ fetch(URL1)
         temp.textContent = forecast[i].main.temp;
 
         image.setAttribute('src', src);
+        image.setAttribute('alt', alt);
+
+
         main.appendChild(title);
         main.appendChild(temp);
         main.appendChild(image)
-        title.appendChild(h3);
-        ;
+        title.appendChild(h3);;
         a++;
 
         document.querySelector('div.weather-forcast').appendChild(main);
       }
     }
   })
-

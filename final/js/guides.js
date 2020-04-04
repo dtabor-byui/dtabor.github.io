@@ -6,38 +6,43 @@ fetch(data)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject);/*DELETE BEFORE PRODUCTION*/
+        
         const guides = jsonObject['guides'];
 
         for (let i = 0; i < guides.length; i++) {
         
                 let index = document.createElement('section');
                 let h2 = document.createElement('h2');
-                let p = document.createElement('p');
+                let motto = document.createElement('p');
                 let image = document.createElement('img');
                 let div = document.createElement('div');
-                let pop = document.createElement('p');
-                let year = document.createElement('p');
-                let rain = document.createElement('p');
+                let yearE = document.createElement('p');
+                let yearS = document.createElement('p');
                 div.classList.add('text');
 
 
-                var photo = 'images/' + guides[i].currentPhoto
+                var photo = 'images/' + guides[i].currentPhoto;
+                var alt = 'An image of a guide that works for us';
 
                 h2.textContent = guides[i].name;
-                p.textContent = 'Motto: ' + guides[i].motto;
-                pop.textContent = 'Year employed ' + guides[i].yearEmployed;
-                year.textContent = 'Rafting Since :' + guides[i].yearStartedRafting;
+                motto.textContent = 'Motto: ' + guides[i].motto;
+                yearE.textContent = 'Year employed ' + guides[i].yearEmployed;
+                yearS.textContent = 'Rafting Since :' + guides[i].yearStartedRafting;
+                
+                // Set image source and attribute
                 image.setAttribute('src', photo);
+                image.setAttribute('alt', alt);
 
+                //
+                
                 index.appendChild(h2);
                 index.appendChild(image);
-                div.appendChild(p);
-                div.appendChild(pop);
-                div.appendChild(year);
-                div.appendChild(rain);
+                div.appendChild(motto);
+                div.appendChild(yearE);
+                div.appendChild(yearS);
+                 index.appendChild(div);
 
-                index.appendChild(div);
+                
                 
                 document.querySelector('div.guides').appendChild(index);
             

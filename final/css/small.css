@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+
+/*
+------------------------------------------
+Link formating 
+------------------------------------------
+*/
+a:link {
+    color: rgba(0, 0, 0);
+  }
+  
+  a:visited {
+    color: rgb(0, 0, 0);
+  }
+  
+  a:active {
+    color: white;
+  }
+
+  
 /*
 ------------------------------------------
 Main Page Formating 
@@ -93,12 +112,6 @@ main section {
     min-height: 0;
 }
 
-main section div {
-    
-    height: auto;
-    /*do not add padding it causes map issues */
-}
-
 .text-1 {
     margin-bottom: 15px;
 }
@@ -112,8 +125,8 @@ main section div img {
 }
 
 .weather {
-    background-color: #698cc4;
-    color: honeydew;
+    background-color: #8691a1;
+    color: black;
     text-align: center;
     justify-content: center;
     border: 3px solid grey;
@@ -361,3 +374,22 @@ form fieldset {
     height: 150px;
     resize: none;
   }
+
+  /*--------------------------------------------------------
+           CSS for Reservations page
+--------------------------------------------------------*/
+.res{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:0 auto;
+    grid-gap: 15px;
+}
+.res section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border:2px red solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    height:400px;
+    width:400px;
+}
