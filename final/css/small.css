@@ -379,17 +379,55 @@ form fieldset {
            CSS for Reservations page
 --------------------------------------------------------*/
 .res{
+    padding:15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     margin:0 auto;
-    grid-gap: 15px;
+    width:100%;
+    column-gap: 15px;
+    row-gap: 15px;
 }
 .res section {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border:2px red solid;
+    margin:0;
+    border:2px cornflowerblue solid;
     border-radius: 10px;
     box-shadow: 5px 5px 10px grey;
-    height:400px;
-    width:400px;
+    background-color: rgba(150, 203, 228, 0.671);
+    column-gap: 3px;
+    row-gap: 3px;
+    padding: 7px;
+}
+.res section h2{
+    margin:0;
+    padding:3px;
+    grid-column: 1 / -1;
+    width:100%;
+    text-align: center;
+}
+.res section p {
+    font-size: 13pt;
+    width:100%;
+    margin:0;
+    padding:3px;
+}
+
+.res section img {
+    margin:0 auto;
+    padding:5px;
+    width:85%;
+}
+.res section ul {
+    padding:10px;
+    margin:0;
+    width:100%;
+    list-style-type: none;
+}
+.res section ul li {
+    font-size: 13pt;
+    padding:5px;
+}
+.res section ul label {
+font-size: 15pt;
+font-weight: bolder;
+padding:3px;
 }

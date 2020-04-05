@@ -25,7 +25,9 @@
         font-size: 15pt;
         
     }
-    
+    .res{
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
 
 
 }
