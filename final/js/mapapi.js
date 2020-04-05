@@ -18,13 +18,13 @@ fetch(data)
         document.querySelector('div.address').appendChild(main);
 
         function initialize() {
-            var myIcon = new google.maps.MarkerImage("images/marker-icon.png", null, null, null, new google.maps.Size(70,70));
+           
 
             var mapProp = {
                 center: myCenter,
                 zoom: 15,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                icon: myIcon 
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+              
             };
 
             var map = new google.maps.Map(document.getElementById("map"), mapProp);
