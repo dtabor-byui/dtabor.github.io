@@ -1,57 +1,82 @@
 @charset "utf-8";
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
+
+/*
+------------------------------------------
+Link formating 
+------------------------------------------
+*/
 a:link {
-    color: rgba(0, 0, 0)
-}
+    color: rgba(0, 0, 0);
+  }
+  
+  a:visited {
+    color: rgb(0, 0, 0);
+  }
+  
+  a:active {
+    color: white;
+  }
 
-a:visited {
-    color: #000
-}
-
-a:active {
-    color: #fff
-}
-
+  
+/*
+------------------------------------------
+Main Page Formating 
+------------------------------------------
+*/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: Gelasio, serif
+    font-family: 'Gelasio', serif;
 }
 
+
+
+/* ---------------------------------------
+          Header Css
+----------------------------------------*/
 header {
-    color: #000;
-    font-family: Roboto, sans-serif;
+    color:black;
+    font-family: 'Roboto', sans-serif;
     font-size: 12pt;
     width: 100%;
     height: 150px;
     background-color: #3b81d1;
-    padding: 20px;
-    overflow: hidden
+    padding:20px;
+    overflow: hidden;
+    
 }
 
 header h1 {
+    
     text-align: center;
     padding: 0;
     margin: 0;
-    width: 100%
+    width: 100%;
 }
 
 header h3 {
     text-align: center;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
+
+
+
+
+
 body {
-    background-color: #eee;
-    font-family: Gelasio
+    background-color: #EEEEEE;
+    font-family: "Gelasio";
+
 }
 
 main {
@@ -61,49 +86,105 @@ main {
     display: grid;
     grid-gap: 10px;
     padding: 5px;
-    width: 100%
+    width:100%;
+    
+
+}
+
+main article {
+   display:none;
+
+}
+
+main article img {
+    width: 100%;
+
 }
 
 main section {
     width: 100%;
     justify-content: center;
     display: inline-grid;
-    grid-template-columns: 1fr;
+    grid-template-columns:  1fr;
     grid-gap: 10px;
     margin-bottom: 10px;
     min-width: 0;
-    min-height: 0
+    min-height: 0;
 }
 
 .text-1 {
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 main section div h3 {
     margin: 10px;
-    padding: 5px
+    padding: 5px;
+}
+main section div img {
+    width: 100%;
 }
 
 .weather {
     background-color: #8691a1;
-    color: #000;
+    color: black;
     text-align: center;
     justify-content: center;
     border: 3px solid grey;
-    padding: 12px;
-    width: 100%;
-    overflow: hidden
+    padding:12px;
+    width:100%;
+    overflow: hidden;
 }
 
 .weather-text {
     text-align: center;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+}
+.weather-text p {
+    margin:0;
+    padding:0;
 }
 
-.weather-text p {
-    margin: 0;
-    padding: 0
+.weather-forcast {
+    display: flex;
+    
+    
 }
+
+.forecast-day {
+    border: 2px solid gray;
+    width:100%;
+    justify-content: center;
+    height: 130px;
+    margin: 5px;
+    padding: 0;
+    /*padding must remain 0 or extends past border on small view */
+    box-shadow: 2px 2px 10px rgb(54, 52, 52);
+    background-color: #3b81d1;
+}
+
+.forecast-title {
+    padding: 5px;
+}
+
+.forecast-day img {
+    width:70%;
+}
+
+.forecast-day h3 {
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.forecast-day p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
 
 footer {
     align-content: center;
@@ -112,16 +193,20 @@ footer {
     text-align: center;
     height: 130px;
     background-color: #3b81d1;
-    overflow: hidden
+    overflow: hidden;
 }
 
+/* ----------------------------------------
+              Navigation Menu
+------------------------------------------*/
+
 nav {
-    width: 100%;
+    width:100%;
     background-color: #f8f65b;
     font-family: Verdana, sans-serif;
     font-size: 10pt;
     box-shadow: 0 3px 3px;
-    overflow: hidden
+    overflow: hidden;
 }
 
 nav ul {
@@ -132,103 +217,255 @@ nav ul {
     max-width: 700px;
     height: 30px;
     padding: 0;
-    text-align: center
+    text-align: center;
+
 }
 
 nav ul li {
-    flex: 1 1
+    flex: 1 1;
+
 }
 
 nav li a {
     text-decoration: none;
-    color: #062658
+    color: #062658;
 }
 
 nav a:hover {
-    background-color: #7ad168
+    background-color: rgb(122, 209, 104);
 }
 
 nav .active {
     padding: 8px;
-    background-color: rgba(121, 209, 104, .795);
-    border-radius: 5px
+    background-color: rgba(121, 209, 104, 0.795);
+    border-radius: 5px;
 }
+/*------------------------------------------------------
+        Contact page CSS
+--------------------------------------------------------*/
 
-.contacts {
-    display: grid;
+.contacts{
+    display:grid;
     grid-template-columns: 1fr;
-    margin: 0;
-    padding: 10px
+    margin:0;
+    padding:10px;
+    
+    
 }
-
 .contact {
-    padding: 25px;
-    width: 100%;
+    padding:25px;
+    width:100%;
     font-size: 10pt;
-    font-weight: 700
+    font-weight: 700;
+    
 }
-
 #map {
     display: block;
     width: 100%;
     height: 300px;
     border: 3px solid grey;
-    grid-column: 1/-1
+    grid-column: 1 / -1;
 }
 
+.final-pic {
+    order: 2;
+}
+.list{
+    order:2;
+}
+/*------------------------------------------------------
+            Guides Page Css
+------------------------------------------------------*/
 .guides {
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 0;
-    grid-gap: 10px
+    padding:0px;
+    grid-gap: 10px;
+    
+    
 }
-
-.guides section {
-    margin: 0 auto;
+.guides section{
+    margin:0 auto;
     text-align: center;
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr;
     padding: 10px;
-    background-color: #94a2bd;
+    background-color: rgb(148, 162, 189);
     border-radius: 10px;
     border: 2px solid gray;
     box-shadow: 5px 5px 10px grey;
-    width: 100%
+    width:100%;
+    
+}
+.guides section img {
+    margin:0 auto;
+    width:80%;
+    border:2px solid cornflowerblue;
 }
 
-form {
-    padding: 0;
-    margin: 0
+/*--------------------------------------------------------
+           CSS  Star for the Specials section
+--------------------------------------------------------*/
+.specials {
+    background: tomato;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-top: 20px;
 }
 
+.specials h3 {
+    margin-left: 40px;
+}
+
+.specials:before,
+.specials:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background: tomato;
+}
+
+.specials:before {
+    transform: rotate(30deg);
+}
+
+.specials:after {
+    transform: rotate(60deg);
+}
+/*----------------------------------------------
+        Form CSS
+------------------------------------------*/
+form{
+    padding:0;
+    margin:0;
+}
 form fieldset {
-    border: 2px solid #757583;
-    border-radius: 10px
-}
-
-form legend {
+    border: 2px solid rgb(117, 117, 131);
+    border-radius: 10px;
+    
+  }
+  
+  form legend {
     margin: 0 1rem;
-    padding: 0 .1rem
-}
+    padding: 0 .1rem;
+  }
 
-form label.pinfo {
+  form label.pinfo {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px 1fr))
-}
-
-form label.ainfo input,
-form label.pinfo input {
+    grid-template-columns: repeat(auto-fill, minmax(200px 1fr));
+  }
+  form label.pinfo input,
+  form label.sinfo input,
+  form label.ainfo input {
     display: block;
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
     width: 100%;
-    background-color: rgba(0, 0, 0, .1);
-    margin: auto
-}
-
-.ainfo {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin:auto;
+  }
+  .ainfo {
     width: 100%;
     height: 150px;
-    resize: none
+    resize: none;
+  }
+
+  /*--------------------------------------------------------
+           CSS for Reservations page
+--------------------------------------------------------*/
+.res{
+    padding:15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    margin:0 auto;
+    width:100%;
+    column-gap: 15px;
+    row-gap: 15px;
 }
+.res section {
+    margin:0;
+    border:2px cornflowerblue solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    background-color: rgba(150, 203, 228, 0.671);
+    column-gap: 3px;
+    row-gap: 3px;
+    padding: 7px;
+}
+.res section h2{
+    margin:0;
+    padding:3px;
+    grid-column: 1 / -1;
+    width:100%;
+    text-align: center;
+}
+.res section p {
+    font-size: 13pt;
+    width:100%;
+    margin:0;
+    padding:3px;
+}
+
+.res section img {
+    margin:0 auto;
+    padding:5px;
+    width:85%;
+}
+.res section ul {
+    padding:10px;
+    margin:0;
+    width:100%;
+    list-style-type: none;
+}
+.res section ul li {
+    font-size: 13pt;
+    padding:5px;
+}
+.res section label {
+font-size: 15pt;
+font-weight: bolder;
+padding:3px;
+}
+
+/*
+--------------------------------- 
+    Table formating
+------------------------------*/
+table{
+    font-size: 13pt;
+    padding:5px;
+    border-collapse: collapse;
+    margin:0 auto;
+    border: 4px black solid;
+    
+  }
+table thead {
+    margin:0 auto;
+    font-size: 13px;
+    padding:5px;
+}
+table tbody{
+    margin:0 auto;
+    font-size: 8pt;
+    padding:5px;
+}
+table tbody tr td{
+    border: gray 1px solid;
+}
+table tfoot{
+    font-size: 10pt;
+}
+.tr {
+    font-weight: bold;
+    
+}
+.table-div {
+    padding:5px;
+    
+}
+
