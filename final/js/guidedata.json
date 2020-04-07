@@ -6,7 +6,9 @@
         "birthYear": 2016,
         "yearEmployed": 2016,
         "yearStartedRafting": 2016,
-        "currentPhoto": "franklin.jpg"
+        "certification": "Watch dog Certification",
+        "currentPhoto": "franklin.jpg",
+        "biography": "Franky was found on the in the spring of 2016, and has been wiit us ever since. He is a powerfull swimmer and is the self apointed lifegaurd. If you go overboard look for Frank he will be there to pull you back to the boat."
       },
       {
         "name": "Elvis Anderson",
@@ -14,7 +16,9 @@
         "birthYear": 1990,
         "yearEmployed": 2010,
         "yearStartedRafting": 1995,
-        "currentPhoto": "elvis.jpg"
+        "certification": "Master Guide Certificate: Utah and Idaho",
+        "currentPhoto": "elvis.jpg",
+        "biography": "Elvis has since he was five years old in Jackson Hole Wyoming. His dad use to ride the Hoback every year and he took Elvis with him. Elvis has shot nearly every class 4 rapid in North America and a few of the class 5's"
       },
       {
         "name": "William Freeman",
@@ -22,15 +26,19 @@
         "birthYear": 1956,
         "yearEmployed": 1991,
         "yearStartedRafting": 1973,
-        "currentPhoto": "Bob.jpg"
+        "certification": "Master Guide Certificate: Utah, Idaho, Oregon, Washington",
+        "currentPhoto": "Bob.jpg",
+        "biography": "Big Bob Freeman is something of a rafting legend in Salmon Idaho. He was born here and has spent nearly every day of his life on the river. He floats in the summer and even fishes in the winter. He know this river and a lot of here secret spots. He know the high water, and the low water. He has seen it all."
       },
       {
         "name": "Jennifer Gillman",
         "motto": "Don't stop believing",
         "birthYear": 1989,
         "yearEmployed": 2011,
+        "certification": "Novice Guide Certificate: Idaho",
         "yearStartedRafting": 2011,
-        "currentPhoto": "jennifer.jpg"
+        "currentPhoto": "jennifer.jpg",
+        "biography": "Jenny Gillman is one of our newer recruits. She was studing as a fish biologist when she was first introduced to river rafting in 2011. HSe has been hooked ever since. For Jenny, it isn't the big rapids, but the gentle meandering and solititude that the river brings."
       },
       {
         "name": "Teddy",
@@ -38,7 +46,9 @@
         "birthYear": 2013,
         "yearEmployed": 2013,
         "yearStartedRafting": 2013,
-        "currentPhoto": "teddy.jpg"
+        "certification": "Greeter Extrodinare : Born this way",
+        "currentPhoto": "teddy.jpg",
+        "biography": "Teddy Flinstone Mcgee has been with us for a long time he used to ride the boats when we first started, but now he just greets the customers and keeps the office staff in good spirits. He still has the heart of a rafter, but his body just can't keep up."
       },
       {
         "name": "Jim Michaels",
@@ -46,7 +56,9 @@
         "birthYear": 1964,
         "yearEmployed": 2001,
         "yearStartedRafting": 1990,
-        "currentPhoto": "jim.jpg"
+        "certification": "Master guide Certificate : Idaho and Washington",
+        "currentPhoto": "jim.jpg",
+        "biography": "General Jim started this company in the late 90's, and has been leading the charge ever since. He bought a raft and started floating. After a year or so people started paying him to take them to fishing holes and maybe hit a few rapids on the way. The rest (as they say) is history."
       }
     ]
   }
