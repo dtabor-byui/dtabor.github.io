@@ -431,3 +431,41 @@ font-size: 15pt;
 font-weight: bolder;
 padding:3px;
 }
+
+/*
+--------------------------------- 
+    Table formating
+------------------------------*/
+table{
+    font-size: 13pt;
+    padding:5px;
+    border-collapse: collapse;
+    margin:0 auto;
+    border: 4px black solid;
+    
+  }
+table thead {
+    margin:0 auto;
+    font-size: 13px;
+    padding:5px;
+}
+table tbody{
+    margin:0 auto;
+    font-size: 8pt;
+    padding:5px;
+}
+table tbody tr td{
+    border: gray 1px solid;
+}
+table tfoot{
+    font-size: 10pt;
+}
+.tr {
+    font-weight: bold;
+    
+}
+.table-div {
+    padding:5px;
+    width:100;
+}
+

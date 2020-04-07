@@ -39,7 +39,7 @@
     </nav>
     <!--Main body below this line -->
     <main>
-
+        <div class="table-div">
         <table>
             <thead>
                 <tr>
@@ -48,13 +48,13 @@
             </thead>
     
             <tbody>
-                <tr>
+                <tr class="tr">
                     <td >Name</td>
                     <td >Length</td>
                     <td >Skill Level</td>
                     <td >Cost description</td>
-                    <td >Cost</td>
-                    <td >Cost</td>
+                    <td >Half Day</td>
+                    <td >Full Day</td>
 
                 </tr>
                 <tr>
@@ -75,11 +75,11 @@
                 </tr>
                 <tr>
                     <td>Hold Your Hat Adventure</td>
-                    <td>4.9miles</td>
+                    <td>4.9 miles</td>
                     <td>Expert</td>
                     <td>Price is per person (can do multiple runs)</td>
-                    <td>$208.00</td>
                     <td>$78.00</td>
+                    <td>$208.00</td>
                 </tr>
                 <tr>
                     <td>Group Rates</td>
@@ -96,7 +96,24 @@
                 </tr>
             </tfoot>
     
-        </table>
+        </table> 
+    </div>
+        <form method="get" action="thanks.html" id="input">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="pinfo">Full Name*<input type="text" name="fullname" required
+                        pattern="[A-Za-z ]{5,}"></label>
+                <label class="pinfo">Phone*<input type="tel" name="phone" placeholder="123-555-1234"
+                        required></label>
+                <label class="pinfo">Zip Code* <input type="number" name="zip" required></label>
+                <label class="pinfo">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="ainfo"> Ask your question here.<textarea name="comment" class="ainfo"
+                        placeholder="Enter your question here ..."></textarea></label>
+                <input type="submit" value="Send my report" class="sbutton">
+            </fieldset>
+
+        </form>
+   
 
         
     </main>

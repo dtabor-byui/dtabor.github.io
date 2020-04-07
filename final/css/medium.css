@@ -61,5 +61,13 @@
     .res {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
+    table{
+        font-size: 15pt;
+        padding:10px
+    }
+    table thead, table tbody, table tfoot {
+        padding: 15px;
+        font-size: 10pt;
+    }
 
 }
