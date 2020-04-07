@@ -1,7 +1,13 @@
-const newLocal = "https://maps.googleapis.com/maps/api/geocode/json?v=3.6&address=1000+South+Main+Street,%20+Riggins,%20+ID&key=AIzaSyCAmlVQvZ7Gaq58E3-a_CyxOO4--jdy5Ns";
 
-    const data = newLocal;
+         var link = 'https://maps.googleapis.com/maps/api/geocode/json?';
+         var api= '&key=AIzaSyCAmlVQvZ7Gaq58E3-a_CyxOO4--jdy5Ns';
+         var address= '&address=1000+South+Main+Street,%20+Riggins,%20+ID';
+         var random = Math.random();
+         var rnd = `&ver=${random}`;
+         var newLocal= link + rnd + address + api;
+         
 
+      const data = newLocal;
 
 fetch(data)
     .then((response) => response.json())
@@ -33,5 +39,10 @@ fetch(data)
         });
         marker.setMap(map);
       }
-        google.maps.event.addDomListener(window, 'load', initMap);
+        initMap();
+        
     })
+    
+
+
+    

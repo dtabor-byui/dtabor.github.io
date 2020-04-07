@@ -1,73 +1,50 @@
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width:550px) {
     nav li a {
-        padding:8px;
+        padding: 8px
     }
 
     nav {
         font-size: 13pt;
-        font-weight: 500;
-       
-    }
-    .list{
-        order:0;
-    }
-    .final-pic {
-        order: 0;
-    }
-    
-    header {
-        font-size: 15pt;
-        
-    }
-    main section {
-        grid-template-columns: 1fr 1fr;
-    }
-    main article {
-        display: inline;
-        
-    
-    }
-    .weather{
-        padding:10px;
-    }
-    footer {
-     
-        height: 80px;
-       
+        font-weight: 500
     }
 
-    .contacts{
+    header {
+        font-size: 15pt
+    }
+
+    main section {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .weather {
+        padding: 10px
+    }
+
+    footer {
+        height: 80px
+    }
+
+    .contacts {
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
-        padding: 10px;
-        
-    }
-    .contact{
-        font-size: 13pt;
-        
-    }
-    #map {
-        grid-column: 1 / -1;
-        width: 100%;
-       
-    }
-    .guides {
-        padding:15px;
-        width:100%;
-    }
-    .guides section {
-        width:100%;
-    }
-    .res {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-    table{
-        font-size: 15pt;
-        padding:10px
-    }
-    table thead, table tbody, table tfoot {
-        padding: 15px;
-        font-size: 10pt;
+        padding: 10px
     }
 
+    .contact {
+        font-size: 13pt
+    }
+
+    #map {
+        grid-column: 1/-1;
+        width: 100%
+    }
+
+    .guides {
+        padding: 15px;
+        width: 100%
+    }
+
+    .guides section {
+        width: 100%
+    }
 }
