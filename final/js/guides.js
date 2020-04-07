@@ -10,7 +10,7 @@ fetch(data)
         const guides = jsonObject['guides'];
 
         for (let i = 0; i < guides.length; i++) {
-        
+                console.table (guides);
                 let index = document.createElement('section');
                 let h2 = document.createElement('h2');
                 let motto = document.createElement('p');
@@ -18,6 +18,8 @@ fetch(data)
                 let div = document.createElement('div');
                 let yearE = document.createElement('p');
                 let yearS = document.createElement('p');
+                let cert = document.createElement('p');
+                let bio = document.createElement('p');
                 div.classList.add('text');
 
 
@@ -28,6 +30,8 @@ fetch(data)
                 motto.textContent = 'Motto: ' + guides[i].motto;
                 yearE.textContent = 'Year employed ' + guides[i].yearEmployed;
                 yearS.textContent = 'Rafting Since :' + guides[i].yearStartedRafting;
+                cert.textContent = 'Certification : ' +guides[i].certification;
+                bio.textContent = 'Biography : ' +guides[i].biography;
                 
                 // Set image source and attribute
                 image.setAttribute('src', photo);
@@ -40,6 +44,8 @@ fetch(data)
                 div.appendChild(motto);
                 div.appendChild(yearE);
                 div.appendChild(yearS);
+                div.appendChild(cert);
+                div.appendChild(bio);
                  index.appendChild(div);
 
                 
