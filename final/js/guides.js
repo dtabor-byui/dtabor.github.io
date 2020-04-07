@@ -20,6 +20,7 @@ fetch(data)
                 let yearS = document.createElement('p');
                 let cert = document.createElement('p');
                 let bio = document.createElement('p');
+                let email = document.createElement('p');
                 div.classList.add('text');
 
 
@@ -32,6 +33,7 @@ fetch(data)
                 yearS.textContent = 'Rafting Since :' + guides[i].yearStartedRafting;
                 cert.textContent = 'Certification : ' +guides[i].certification;
                 bio.textContent = 'Biography : ' +guides[i].biography;
+                email.textContent = 'Email : ' +guides[1].email;
                 
                 // Set image source and attribute
                 image.setAttribute('src', photo);
@@ -44,6 +46,7 @@ fetch(data)
                 div.appendChild(motto);
                 div.appendChild(yearE);
                 div.appendChild(yearS);
+                div.appendChild(email);
                 div.appendChild(cert);
                 div.appendChild(bio);
                  index.appendChild(div);
