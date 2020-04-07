@@ -33,7 +33,7 @@ fetch(data)
                 yearS.textContent = 'Rafting Since :' + guides[i].yearStartedRafting;
                 cert.textContent = 'Certification : ' +guides[i].certification;
                 bio.textContent = 'Biography : ' +guides[i].biography;
-                email.textContent = 'Email : ' +guides[1].email;
+                email.textContent = 'Email : ' +guides[i].email;
                 
                 // Set image source and attribute
                 image.setAttribute('src', photo);
