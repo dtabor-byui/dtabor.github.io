@@ -8,6 +8,9 @@
         font-weight: 500;
        
     }
+    nav ul li {
+        font-size: 15pt;
+    }
     .final-pic {
         order: 0;
     }
@@ -38,8 +41,13 @@
 
     }
 
-    .table-div {
+    form{
         padding:15px;
-        width:100;
+        width: 100%;
     }
+    form label{
+        font-size: 13pt;
+        grid-template-columns: 40% 50%;
+    }
+  
 }

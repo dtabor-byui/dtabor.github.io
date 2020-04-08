@@ -40,82 +40,88 @@
     <!--Main body below this line -->
     <main>
         <div class="table-div">
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="6">Salmon River Adventures Price List </th>
-                </tr>
-            </thead>
-    
-            <tbody>
-                <tr class="tr">
-                    <td >Name</td>
-                    <td >Length</td>
-                    <td >Skill Level</td>
-                    <td >Cost description</td>
-                    <td >Half Day</td>
-                    <td >Full Day</td>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="6">Salmon River Adventures Price List </th>
+                    </tr>
+                </thead>
 
-                </tr>
-                <tr>
-                    <td>Lazy River Ride</td>
-                    <td>12.6 miles</td>
-                    <td>Novice</td>
-                    <td>Price is per person half day and full day</td>
-                    <td>$78.00</td>
-                    <td>$108.00</td>
-                </tr>
-                <tr>
-                    <td>Mid-Level Adventure</td>
-                    <td>8.4 miles</td>
-                    <td>Moderate</td>
-                    <td>Price is per person half day and full day</td>
-                    <td>$98.00</td>
-                    <td>$128.00</td>
-                </tr>
-                <tr>
-                    <td>Hold Your Hat Adventure</td>
-                    <td>4.9 miles</td>
-                    <td>Expert</td>
-                    <td>Price is per person (can do multiple runs)</td>
-                    <td>$78.00</td>
-                    <td>$208.00</td>
-                </tr>
-                <tr>
-                    <td>Group Rates</td>
-                    <td>Call!</td>
-                    <td>Call!</td>
-                    <td>Call!</td>
-                    <td>Call!</td>
-                    <td>Call!</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="6">Price list for 2020</th>
-                </tr>
-            </tfoot>
-    
-        </table> 
-    </div>
+                <tbody>
+                    <tr class="tr">
+                        <td>Name</td>
+                        <td>Length</td>
+                        <td>Skill Level</td>
+                        <td>Cost description</td>
+                        <td>Half Day</td>
+                        <td>Full Day</td>
+
+                    </tr>
+                    <tr>
+                        <td>Lazy River Ride</td>
+                        <td>12.6 miles</td>
+                        <td>Novice</td>
+                        <td>Price is per person half day and full day</td>
+                        <td>$78.00</td>
+                        <td>$108.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mid-Level Adventure</td>
+                        <td>8.4 miles</td>
+                        <td>Moderate</td>
+                        <td>Price is per person half day and full day</td>
+                        <td>$98.00</td>
+                        <td>$128.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hold Your Hat Adventure</td>
+                        <td>4.9 miles</td>
+                        <td>Expert</td>
+                        <td>Price is per person (can do multiple runs)</td>
+                        <td>$78.00</td>
+                        <td>$208.00</td>
+                    </tr>
+                    <tr>
+                        <td>Group Rates</td>
+                        <td>Call!</td>
+                        <td>Call!</td>
+                        <td>Call!</td>
+                        <td>Call!</td>
+                        <td>Call!</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="6">Price list for 2020</th>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </div>
         <form method="get" action="thanks.html" id="input">
             <fieldset>
-                <legend>Personal Information</legend>
-                <label class="pinfo">Full Name*<input type="text" name="fullname" required
-                        pattern="[A-Za-z ]{5,}"></label>
-                <label class="pinfo">Phone*<input type="tel" name="phone" placeholder="123-555-1234"
-                        required></label>
-                <label class="pinfo">Zip Code* <input type="number" name="zip" required></label>
-                <label class="pinfo">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label class="ainfo"> Ask your question here.<textarea name="comment" class="ainfo"
+                <legend>Request Reservation</legend>
+                <label >Full Name*<input type="text" name="fullname" required pattern="[A-Za-z ]{5,}"></label>
+                <label >Phone*<input type="tel" name="phone" placeholder="123-555-1234" required></label>
+                <label class="date">Date<input type="date" name="date"></label>
+                <label >Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label> Select your Adventure :
+                    <select name="">
+                        <option value="" disabled selected>Please Select</option>
+                        <option value="">All day Float</option>
+                        <option value="">Mid-level Adventure</option>
+                        <option value="">Hold Your Hat Adventure</option>
+                    </select>
+                </label>
+                <label class=""> Ask your question here.<textarea name="comment" class="ainfo"
                         placeholder="Enter your question here ..."></textarea></label>
-                <input type="submit" value="Send my report" class="sbutton">
+                <input type="submit" value="Send Reservation Information" class="sbutton">
             </fieldset>
 
         </form>
-   
 
-        
+
+
     </main>
     <!--footer below this line-->
     <footer>

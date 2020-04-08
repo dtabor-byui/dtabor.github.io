@@ -8,6 +8,9 @@
         font-weight: 500;
        
     }
+    nav ul li {
+        font-size: 12pt;
+    }
     .list{
         order:0;
     }
@@ -66,8 +69,21 @@
         padding:10px
     }
     table thead, table tbody, table tfoot {
-        padding: 15px;
+        padding: 13px;
         font-size: 14pt;
+    }
+
+    form{
+        padding:10px;
+        width: 100%;
+    }
+    form label{
+        font-size: 13pt;
+        grid-template-columns: 40% 50%;
+    }
+    .table-div {
+        margin-top: 15px;
+        width:100%;
     }
 
 }
