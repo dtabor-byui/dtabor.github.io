@@ -91,17 +91,17 @@ main {
 
 }
 
-main article {
+main .div2 {
     display: none;
 
 }
 
-main article img {
+main .div2 img {
     width: 100%;
 
 }
 
-main section {
+main .div1, .div3, .div4 {
     width: 100%;
     justify-content: center;
     display: inline-grid;
@@ -118,12 +118,15 @@ main section {
     margin-left: 10px;
 }
 
-main section div h3 {
+main .div1 .div3 .div4 h3 {
     margin: 10px;
     padding: 5px;
 }
 
-main section div img {
+main .div1 .div3 .div4 div img {
+    width: 100%;
+}
+.middle-pic img{
     width: 100%;
 }
 
@@ -287,7 +290,14 @@ nav button {
 }
 
 .final-pic {
-    order: 2;
+    order: 1;
+}
+
+.cta {
+    order:2;
+}
+.final-pic img{
+    width:100%;
 }
 
 .list {

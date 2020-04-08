@@ -15,15 +15,18 @@
     .final-pic {
         order: 0;
     }
+    .cta {
+        order:0;
+    }
     
     header {
         font-size: 15pt;
         
     }
-    main section {
+    main .div1, .div3, .div4 {
         grid-template-columns: 1fr 1fr;
     }
-    main article {
+    main .div2 {
         display: inline;
         
     
