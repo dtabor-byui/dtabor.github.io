@@ -28,11 +28,9 @@ day[5] = "Friday";
 day[6] = "Saturday";
 
 var dDay = day[date.getDay()];
-console.log(dDay);
 var mMonth = month[date.getMonth()];
 var iMonth = month.indexOf(mMonth);
 var iDay = day.indexOf(dDay);
-console.log(iDay);
 let main = document.createElement('div');
 let ul = document.createElement('ul');
 let li = document.createElement('li');
