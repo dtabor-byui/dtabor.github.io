@@ -1,16 +1,14 @@
 @media only screen and (min-width: 550px) {
-    nav li a {
-        padding:8px;
-    }
+   
+  nav button {
+    display: none;
+  }
 
-    nav {
-        font-size: 13pt;
-        font-weight: 500;
-       
-    }
-    nav ul li {
-        font-size: 12pt;
-    }
+  nav ul.hide {
+    justify-content:center;
+    display: block;
+    display: flex;
+  }
     .list{
         order:0;
     }

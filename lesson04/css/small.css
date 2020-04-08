@@ -89,9 +89,6 @@ nav ul li a:hover {
   color: #36454f;
   border-radius: 8px;
 }
-nav ul.hide{
-  display: none;
-  }
 main {
   margin: 0 auto;
   padding: 20px;

@@ -1,16 +1,5 @@
 @media only screen and (min-width: 950px) {
-    nav li a {
-        padding:8px;
-    }
 
-    nav {
-        font-size: 13pt;
-        font-weight: 500;
-       
-    }
-    nav ul li {
-        font-size: 15pt;
-    }
     .final-pic {
         order: 0;
     }

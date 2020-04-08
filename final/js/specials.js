@@ -28,9 +28,11 @@ day[5] = "Friday";
 day[6] = "Saturday";
 
 var dDay = day[date.getDay()];
+console.log(dDay);
 var mMonth = month[date.getMonth()];
 var iMonth = month.indexOf(mMonth);
 var iDay = day.indexOf(dDay);
+console.log(iDay);
 let main = document.createElement('div');
 let ul = document.createElement('ul');
 let li = document.createElement('li');
@@ -39,10 +41,10 @@ main.classList.add('spec-1');
 main.appendChild(ul);
 ul.appendChild(li);
 
-if (iDay != 6 && iDay != 5) {
+if (iDay != 6 && iDay != 5 && iMonth != 05 && iMonth != 06 && iMonth != 07 && iMonth != 08) {
     li.textContent = 'If you ride with us today you will recieve a 20% discount';
 }
-if (iMonth != 05 && iMonth != 06 && iMonth != 07 && iMonth != 08) {
+else if (iMonth != 05 && iMonth != 06 && iMonth != 07 && iMonth != 08) {
     li.textContent = 'If you book and pay for a trip today you will recieve a 20% discount';
 } else {
     para.textContent = 'Call today for other potential discounts';
