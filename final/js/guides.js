@@ -10,7 +10,6 @@ fetch(data)
         const guides = jsonObject['guides'];
 
         for (let i = 0; i < guides.length; i++) {
-                console.table (guides);
                 let index = document.createElement('section');
                 let h2 = document.createElement('h2');
                 let motto = document.createElement('p');
