@@ -86,6 +86,9 @@
         margin-top: 15px;
         width:100%;
     }
+    table thead tr th {
+        font-size:20pt;
+    }
     
     
 
