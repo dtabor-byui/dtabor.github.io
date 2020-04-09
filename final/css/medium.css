@@ -23,6 +23,13 @@
         font-size: 15pt;
         
     }
+    header p {
+        margin-bottom: 10px;
+    }
+    header img{
+        display: flex;
+        margin:0;
+    }
     main .div1, .div3, .div4 {
         grid-template-columns: 1fr 1fr;
     }

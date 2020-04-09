@@ -5,8 +5,10 @@
     }
     header {
         font-size: 22pt;
-        
-        
+        padding:20px 
+    }
+    header img{
+        margin:0;
     }
     #map {
         padding:5px;
